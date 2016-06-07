@@ -1,0 +1,50 @@
+<%= yield :top_of_page %>
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <title>Parliament.uk alpha prototype</title>
+    <%= stylesheet_link_tag 'application' %>
+    <link rel="shortcut icon" href="<%= asset_path 'favicon.ico' %>" type="image/x-icon" />
+
+    <%# TODO insert font import into css instead? %>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <%# TODO PDS favicons %>
+    <link rel="mask-icon" href="<%= asset_path 'gov.uk_logotype_crown.svg' %>" color="#0b0c0c">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<%= asset_path "apple-touch-icon-152x152.png" %>">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<%= asset_path "apple-touch-icon-120x120.png" %>">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<%= asset_path "apple-touch-icon-76x76.png" %>">
+    <link rel="apple-touch-icon-precomposed" href="<%= asset_path "apple-touch-icon-60x60.png" %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="<%= asset_path "opengraph-image.png" %>">
+    
+    <%= yield :head %>
+  
+  </head>
+  <body>
+    <%= yield :body_start %>
+      <div class="sitewide-message">
+        <div class="wrapper">
+          <p>Alpha prototype</p>
+        </div>
+      </div>
+      <header>
+        <div class="wrapper">
+
+          <%# TODO svg to png fallback %>
+          <a href="/"><img class="site-logo" src="<%= path_to_image('parliament-uk--black.svg') %>" alt="Parliament.uk" /></a>
+        </div>
+      </header>
+      <%= yield :after_header %>
+      <main id="content">
+        
+        <%= content_for?(:content) ? yield(:content) : yield %>
+        
+      </main>
+
+
+    <script src="<%= asset_path "govuk-template.js" %>"></script>
+    <%= yield :body_end %>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+
+.sitewide-message {
+	background-color: rgba(0, 0, 0, 1);
+	padding: 0.5rem 0;
+	color: #fff;
+	text-align: center;
+
+	p:first-of-type {
+		margin-top: 0;
+	}
+
+	p:first-of-type::before {
+		content: "";
+		background: url("/assets/alert--white.svg");
+		background-repeat: no-repeat;
+		display: inline-block;
+		width: 0.875rem;
+		height: 0.875rem;
+		padding-right: 0.5rem;
+	}
+
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 1rem 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.site-logo {
+	width: 300px;
+	height: auto;
+}

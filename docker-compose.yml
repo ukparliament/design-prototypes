@@ -1,0 +1,14 @@
+web:
+  build: .
+  volumes:
+    - .:/opt/find_your_mp
+  ports:
+    - "3000"
+lb:
+  image: dockercloud/haproxy
+  links:
+    - web
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+  ports:
+    - 80:80

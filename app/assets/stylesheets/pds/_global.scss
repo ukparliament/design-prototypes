@@ -1,0 +1,38 @@
+
+html {
+	color: $grey100;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+	color: $blue;
+}
+
+a:visited {
+	color: $purple;
+}
+
+a:hover, a:focus {
+	color: $blue-darker;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.5rem 1rem;	
+	background-color: $blue;
+	color: $white;
+}
+
+.button:hover, 
+.button:focus {
+	background-color: $blue-darker;
+	color: $white;
+}

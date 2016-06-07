@@ -1,0 +1,85 @@
+
+// Temp settings for issues prototype
+// TODO everything! 
+// TODO rem to px fallback
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  @include media(tablet){
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  -webkit-font-variant-ligatures: common-ligatures; /* for iOS and Safari 6 */
+  font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
+}
+
+p {
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  font-kerning: normal;
+}
+
+ul, ol {
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+}
+
+li {
+  margin-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.625rem;
+  margin: 2.5rem 0 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 2.5rem 0 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 2.25rem 0 1rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  margin: 2rem 0 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 2rem 0 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+  margin: 2rem 0 1rem;
+}
+
+.subhead {
+  margin-top: -1rem;
+  font-weight: 400;
+  color: #777;
+}
+
+.event__date {
+  font-size: 2.625rem;
+  font-weight: 700;
+  display: block;
+}
+
+.event__heading {
+  margin-top: 0;
+}
