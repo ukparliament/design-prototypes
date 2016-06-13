@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 html {
 	color: $grey100;
@@ -35,4 +42,8 @@ a:hover, a:focus {
 .button:focus {
 	background-color: $blue-darker;
 	color: $white;
+}
+
+.two-column {
+  columns: 2;
 }
