@@ -1,7 +1,15 @@
 .form-group-checkbox {
-  display: block;
-  margin-bottom: 0.5rem;
-  input {
-    margin-right: 5px;
-  }
+	display: block;
+	margin-bottom: 0.5rem;
+	
+	input {
+		margin-right: 5px;
+	}
 }
+
+input {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	padding: 0.5rem;
+}
+
