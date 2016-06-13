@@ -7,6 +7,14 @@ class ApplicationController < ActionController::Base
   	render layout: "pds_template"
   end
 
+  def find_members
+  	render layout: "pds_template"
+  end
+
+  def search_results
+  	render layout: "pds_template"
+  end
+
   def barebones
   	render layout: "pds_template"
   end
