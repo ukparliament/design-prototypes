@@ -1,0 +1,33 @@
+.results-filters {
+	@include grid-column(1 / 4);	
+}
+
+.results-filters__title {
+	font-size: 1rem;	
+}
+
+.results-members__list {
+	@include grid-column(3 / 4);
+}
+
+.results-card {
+	@extend %contain-floats;
+	border: 1px solid $grey20;
+	padding: 1rem;
+
+}
+
+.results-card__details {
+	overflow: hidden;
+}
+
+.results-card__profile {
+	max-width: 150px;
+	float: left;
+	margin-right: 1rem;
+}
+
+.results-card__title {
+	@extend h4;
+	margin-top: 0;
+}
