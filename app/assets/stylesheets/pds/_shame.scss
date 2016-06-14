@@ -1,0 +1,15 @@
+// Hacks and quick prototyping helpers. Clean up at somepoint.
+// http://csswizardry.com/2013/04/shame-css/
+
+a.text-white,
+a.text-white:hover,
+a.text-white:visited,
+.text-white {
+  color: $white;
+}
+
+.section {
+	@extend h3;
+	color: $grey60;
+	margin-bottom: -2rem;
+}

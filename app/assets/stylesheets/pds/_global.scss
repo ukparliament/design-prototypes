@@ -31,11 +31,17 @@ a:hover, a:focus {
 	color: $blue-darker;
 }
 
+.headline-short {
+	max-width: 700px;
+}
+
 .button {
 	display: inline-block;
 	padding: 0.5rem 1rem;	
 	background-color: $blue;
 	color: $white;
+	cursor: pointer;
+	border: none;
 }
 
 .button:hover, 
