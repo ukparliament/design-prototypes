@@ -10,7 +10,27 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+// = require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+"use strict";
+
+$(document).ready(function(){
+	$(".house-checkbox").click(function(){
+		var houseName = $(this).attr("name");
+		toggleMembersByHouse($(this), houseName);
+	});
+
+	function toggleMembersByHouse(self, house){
+		if(self.prop("checked")) {
+			$('div[data-house='+house.toLowerCase()+']').show();
+			console.log("I'm happening");
+		}
+		else {
+			$('div[data-house='+house.toLowerCase()+']').hide();
+			console.log("hello");
+		}
+	}
+});
