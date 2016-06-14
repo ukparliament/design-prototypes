@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   get 'search_results' => 'application#search_results'
   get 'find_members' => 'application#find_members'
 
+  resources :issues, only: [:index] do
+    get '/people(.:format)', to: 'people#index_by_issue', as: 'people'
+  end
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
