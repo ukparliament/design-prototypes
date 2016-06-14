@@ -13,3 +13,14 @@ a.text-white:visited,
 	color: $grey60;
 	margin-bottom: -2rem;
 }
+
+.two-column {
+  columns: 2;
+}
+
+.three-column {
+  columns: 2;
+  // column-fill: auto;
+  // height: 100px;
+}
+

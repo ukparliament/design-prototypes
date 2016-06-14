@@ -49,7 +49,7 @@
 .card:first-of-type {
 	// border-top: 2px solid $grey20;
 	// padding-top: 2rem;
-	margin-top: 2rem;
+	// margin-top: 2rem;
 }
 
 .card {
@@ -87,6 +87,8 @@
 }
 
 .lede--results {
+	margin-bottom: 2rem;
+
 	@include media(tablet){
 		margin-top: 0;
 	}
@@ -115,6 +117,6 @@
 
 .terms-list__title {
 	@include media(tablet){
-		max-width: 350px;
+		max-width: 300px;
 	}
 }
