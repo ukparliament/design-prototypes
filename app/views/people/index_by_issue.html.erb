@@ -1,16 +1,13 @@
 <p class="section">Issues / Housing</p>
 <h1>Members interests and activities</h1>
 <div class="">
-	<p class="lede">3 MPs or Lords have listed 'housing' as an interest in their biography:</p>
+	<p class="lede">3 MPs or Lords have listed 'housing' as an interest in their biography.</p>
 	<div class="results-interests">
 		<ul class="three-column">
-			<li><a href="#" >Lord Hylton</a></li>
-			<li><a href="#" >Brandon Lewis MP</a></li>
-			<li><a href="#" >Nick Boles MP</a></li>
-<!-- 			<li><a href="#" >Name</a></li>
-			<li><a href="#" >Name</a></li>
-			<li><a href="#" >Name</a></li>
- -->		</ul>
+			<li><a href="#" >Baroness Hargreaves</a></li>
+			<li><a href="#" >Tom Cox MP</a></li>
+			<li><a href="#" >Jack Evans MP</a></li>
+		</ul>
 	</div>
 </div>
 
@@ -59,110 +56,111 @@
 		<div>
 			<label for="time" class="visually-hidden">Time:</label>
 			<select name="time" >
-				<option value="Past week">Past week</option>
-				<option value="Past month">Past month</option>
-				<option value="Past 6 months">Past 6 months</option>
+				<option value="Past week" disabled>Past week</option>
+				<option value="Past month" disabled>Past month</option>
+				<option value="Past 6 months" disabled>Past 6 months</option>
 				<option value="Past year" selected="selected">Past year</option>
-				<option value="Past 2 years">Past 2 years</option>
-				<option value="Past 5 years">Past 5 years</option>
-				<option value="Past 10 years">Past 10 years</option>
-				<option value="Custom range">Custom range</option>
+				<option value="Past 2 years" disabled>Past 2 years</option>
+				<option value="Past 5 years" disabled>Past 5 years</option>
+				<option value="Past 10 years" disabled>Past 10 years</option>
+				<option value="Custom range" disabled>Custom range</option>
 			</select>
 		</div>
 	</form>
 
 	<div class="results-members__list">
-		<p class="lede lede--results">6 MPs or Lords have contributed in Parliament around this issue this past year:</p>
+		<p class="lede lede--results">6 MPs or Lords have contributed in Parliament around this issue this past year.</p>
 		
-		<div class="card" data-house="commons" >
-			<img class="card__profile" alt="" src="<%= path_to_image('avatar.png') %>" />
+		<div class="card" data-house="commons" data-contributions="commitee, oral, written, debate, edm" >
+			<img class="card__profile" alt="Claire Miller MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
-					<a href="#" >Teresa Pearce MP</a>
+					<a href="#" >Claire Miller MP</a>
 				</h2>
 				<p>47 contributions</p>
 				<ul>
-					<li>Member of 1 related commitee</li>
-					<li>23 questions tabled</li>
-					<li>Spoken in 14 debates</li>		
+					<li>Member of <a href="#" >1 related commitee</a></li>
+					<li><a href="#" >23 questions tabled</a></li>
+					<li>Spoken in <a href="#" >14 debates</a></li>		
+				</ul>
+				<a href="#" >See all activity</a>
+			</div>
+		</div>
+
+		<div class="card" data-house="lords" data-contributions="commitee, oral, written, debate" >
+			<img class="card__profile" alt="Lord Stratton" src="<%= path_to_image('avatar.png') %>" />
+			<div class="card__details">
+				<h2 class="card__title">
+					<a href="#" >Lord Stratton</a>
+				</h2>
+				<p>20 contributions</p>
+				<ul>
+					<li>Member of <a href="#" >1 related commitee</a></li>
+					<li><a href="#" >1 questions tabled</a></li>
+					<li>Spoken in <a href="#" >15 debates</a></li>		
 				</ul>
 				<a href="#" >See all activity</a>
 			</div>
 		</div>
 
 		
-		<div class="card" data-house="commons" >
-			<img class="card__profile" alt="" src="<%= path_to_image('avatar.png') %>" />
+		<div class="card" data-house="commons" data-contributions="commitee, oral, written, debate, edm" >
+			<img class="card__profile" alt="Rt Hon Dennis Smith MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
-					<a href="#" >Rt Hon David Hanson MP</a>
+					<a href="#" >Rt Hon Dennis Smith MP</a>
 				</h2>
-				<p>23 contributions</p>
+				<p>18 contributions</p>
 				<ul>
-					<li>Member of 1 related commitee</li>
-					<li>5 questions tabled</li>
-					<li>Spoken in 6 debates</li>		
+					<li>Member of <a href="#" >1 related commitee</a></li>
+					<li><a href="#" >5 questions tabled</a></li>
+					<li>Spoken in <a href="#" >6 debates</a></li>		
 				</ul>
 				<a href="#" >See all activity</a>
 			</div>
 		</div>
 
 
-		<div class="card" data-house="lords" >
-			<img class="card__profile" alt="" src="<%= path_to_image('avatar.png') %>" />
+		<div class="card" data-house="lords" data-contributions="oral, written, debate, edm" >
+			<img class="card__profile" alt="Baroness Hargreaves" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
-					<a href="#" >Lord Hylton</a>
-				</h2>
-				<p>19 contributions</p>
-				<ul>
-					<li>1 questions tabled</li>
-					<li>Spoken in 15 debates</li>		
-				</ul>
-				<a href="#" >See all activity</a>
-			</div>
-		</div>
-
-		<div class="card" data-house="lords" >
-			<img class="card__profile" alt="" src="<%= path_to_image('avatar.png') %>" />
-			<div class="card__details">
-				<h2 class="card__title">
-					<a href="#" >Baroness Tonge</a>
+					<a href="#" >Baroness Hargreaves</a>
 				</h2>
 				<p>11 contributions</p>
 				<ul>
-					<li>2 questions tabled</li>
-					<li>Spoken in 1 debates</li>		
+					<li><a href="#" >2 questions tabled</a></li>
+					<li>Spoken in <a href="#" >1 debates</a></li>		
 				</ul>
 				<a href="#" >See all activity</a>
 			</div>
 		</div>
 
-		<div class="card" data-house="commons" >
-			<img class="card__profile" alt="" src="<%= path_to_image('avatar.png') %>" />
+		<div class="card" data-house="commons" data-contributions="written, debate" >
+			<img class="card__profile" alt="Jonathan Stuart MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
-					<a href="#" >Jonathan Edwards MP</a>
+					<a href="#" >Jonathan Stuart MP</a>
 				</h2>
 				<p>8 contributions</p>
 				<ul>
-					<li>5 questions tabled</li>
-					<li>Spoken in 2 debates</li>		
+					<li><a href="#" >5 questions tabled</a></li>
+					<li>Spoken in <a href="#" >2 debates</a></li>		
 				</ul>
 				<a href="#" >See all activity</a>
 			</div>
 		</div>
 
-		<div class="card" data-house="commons" >
-			<img class="card__profile" alt="" src="<%= path_to_image('avatar.png') %>" />
+		<div class="card" data-house="commons" data-contributions="written, debate" >
+			<img class="card__profile" alt="Jennie Brown MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
-					<a href="#" >Nick Boles MP</a>
+					<a href="#" >Jennie Brown MP</a>
 				</h2>
 				<p>7 contributions</p>
 				<ul>
-					<li>1 questions tabled</li>
-					<li>Spoken in 6 debates</li>		
+					<li><a href="#" >1 questions tabled</a></li>
+					<li>Spoken in <a href="#" >6 debates</a></li>		
 				</ul>
 				<a href="#" >See all activity</a>
 			</div>
