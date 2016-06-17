@@ -17,7 +17,7 @@
 
 "use strict";
 
-$(document).ready(function(){
+$(document).ready(function() {
 	$("input[type=checkbox]").click(function() {
 		var dataType = $(this).attr("name");
 		if (dataType === "commons" || dataType === "lords") {
@@ -26,6 +26,10 @@ $(document).ready(function(){
 		else {
 			filterMembersByContribution.call(this, dataType);
 		}	
+	});
+
+	$("a[href='#']").click(function() {
+		alert("This is a prototype so this link doesn't go anywhere yet.");
 	});
 
 	function filterMembersByHouse(house) {
