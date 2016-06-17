@@ -17,11 +17,11 @@
 		<h3 class="results-filters__title">House:</h3>
 		<div class="two-column">
 			<div class="form-group-checkbox">
-				<input type="checkbox" class="house-checkbox" name="Lords" checked="checked">
+				<input type="checkbox" name="lords" checked="checked">
 				<label for="Lords" >Lords</label>
 			</div>
 			<div class="form-group-checkbox">
-				<input type="checkbox" class="house-checkbox" name="Commons" checked="checked">
+				<input type="checkbox" name="commons" checked="checked">
 				<label for="Commons" >Commons</label>
 			</div>
 		</div>
@@ -71,7 +71,7 @@
 	<div class="results-members__list">
 		<p class="lede lede--results">6 MPs or Lords have contributed in Parliament around this issue this past year.</p>
 		
-		<div class="card" data-house="commons" data-contributions="commitee, oral, written, debate, edm" >
+		<div class="card" data-house="commons" data-contribution-committee="true", data-contribution-oral="true", data-contribution-written="true", data-contribution-debate="true", data-contribution-edm="true">
 			<img class="card__profile" alt="Claire Miller MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -87,7 +87,7 @@
 			</div>
 		</div>
 
-		<div class="card" data-house="lords" data-contributions="commitee, oral, written, debate" >
+		<div class="card" data-house="lords" data-contribution-committee="true", data-contribution-oral="true", data-contribution-written="true", data-contribution-debate="true">
 			<img class="card__profile" alt="Lord Stratton" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -104,7 +104,7 @@
 		</div>
 
 		
-		<div class="card" data-house="commons" data-contributions="commitee, oral, written, debate, edm" >
+		<div class="card" data-house="commons" data-contribution-committee="true", data-contribution-oral="true", data-contribution-written="true", data-contribution-debate="true", data-contribution-edm="true">
 			<img class="card__profile" alt="Rt Hon Dennis Smith MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -121,7 +121,7 @@
 		</div>
 
 
-		<div class="card" data-house="lords" data-contributions="oral, written, debate, edm" >
+		<div class="card" data-house="lords" data-contribution-oral="true", data-contribution-written="true", data-contribution-debate="true", data-contribution-edm="true">
 			<img class="card__profile" alt="Baroness Hargreaves" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -136,7 +136,7 @@
 			</div>
 		</div>
 
-		<div class="card" data-house="commons" data-contributions="written, debate" >
+		<div class="card" data-house="commons" data-contribution-written="true", data-contribution-debate="true">
 			<img class="card__profile" alt="Jonathan Stuart MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -151,7 +151,7 @@
 			</div>
 		</div>
 
-		<div class="card" data-house="commons" data-contributions="written, debate" >
+		<div class="card" data-house="commons" data-contribution-written="true", data-contribution-debate="true">
 			<img class="card__profile" alt="Jennie Brown MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">

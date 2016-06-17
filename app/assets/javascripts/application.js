@@ -18,19 +18,32 @@
 "use strict";
 
 $(document).ready(function(){
-	$(".house-checkbox").click(function(){
-		var houseName = $(this).attr("name");
-		toggleMembersByHouse($(this), houseName);
-	});
-
-	function toggleMembersByHouse(self, house){
-		if(self.prop("checked")) {
-			$('div[data-house='+house.toLowerCase()+']').show();
-			console.log("I'm happening");
+	$("input[type=checkbox]").click(function() {
+		var dataType = $(this).attr("name");
+		if (dataType === "commons" || dataType === "lords") {
+			filterMembersByHouse.call(this, dataType);
 		}
 		else {
-			$('div[data-house='+house.toLowerCase()+']').hide();
-			console.log("hello");
+			filterMembersByContribution.call(this, dataType);
+		}	
+	});
+
+	function filterMembersByHouse(house) {
+		if($(this).prop("checked")) {
+			$('div[data-house='+house+']').show();
+		}
+		else {
+			$('div[data-house='+house+']').hide();
+		}
+	}
+
+
+	function filterMembersByContribution(type) {
+		if($(this).prop("checked")) {
+			$('div[data-contribution-' + type + '=true]').show();
+		}
+		else {
+			$('div[data-contribution-' + type + '=true]').hide();
 		}
 	}
 });
