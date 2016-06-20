@@ -42,6 +42,14 @@
 				<label for="EDM">Early Day Motions</label>
 			</div>
 		</div>
+		<h3 class="results-filters__title">Biography:</h3>
+		<div class="two-column">
+			<div class="form-group-checkbox">
+				<input type="checkbox" name="interest" checked="checked">
+				<label for="interest" >Issue listed as an interest</label>
+			</div>
+		</div>
+
 		<h3 class="results-filters__title">Time:</h3>
 		<div>
 			<label for="time" class="visually-hidden">Time:</label>
@@ -61,13 +69,13 @@
 	<div class="results-members__list">
 		<p class="lede lede--results">6 MPs or Lords have contributed in Parliament around this issue this past year.</p>
 		
-		<div class="card" data-house="commons" data-contribution-committee="true", data-contribution-oral="true", data-contribution-written="true", data-contribution-debate="true", data-contribution-edm="true">
+		<div class="card" data-house="commons" data-contribution-committee="true" data-contribution-oral="true" data-contribution-written="true" data-contribution-debate="false" data-contribution-edm="true" data-interest="true">
 			<img class="card__profile" alt="Claire Miller MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
 					<a href="#" >Claire Miller MP</a>
 				</h2>
-				<p>47 contributions</p>
+				<p>47 contributions around 'housing' and listed as an interest in their biography.</p>
 				<ul>
 					<li>Member of <a href="#" >1 related commitee</a></li>
 					<li><a href="#" >23 questions tabled</a></li>
@@ -77,13 +85,13 @@
 			</div>
 		</div>
 
-		<div class="card" data-house="lords" data-contribution-committee="true", data-contribution-oral="true", data-contribution-written="true", data-contribution-debate="true">
+		<div class="card" data-house="lords" data-contribution-committee="true" data-contribution-oral="true" data-contribution-written="true" data-contribution-debate="true" >
 			<img class="card__profile" alt="Lord Stratton" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
 					<a href="#" >Lord Stratton</a>
 				</h2>
-				<p>20 contributions</p>
+				<p>20 contributions around 'housing'.</p>
 				<ul>
 					<li>Member of <a href="#" >1 related commitee</a></li>
 					<li><a href="#" >1 questions tabled</a></li>
@@ -94,13 +102,13 @@
 		</div>
 
 		
-		<div class="card" data-house="commons" data-contribution-committee="true", data-contribution-oral="true", data-contribution-written="true", data-contribution-debate="true", data-contribution-edm="true">
+		<div class="card" data-house="commons" data-contribution-committee="true" data-contribution-oral="true" data-contribution-written="true" data-contribution-debate="true" data-contribution-edm="true" data-interest="true">
 			<img class="card__profile" alt="Rt Hon Dennis Smith MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
 					<a href="#" >Rt Hon Dennis Smith MP</a>
 				</h2>
-				<p>18 contributions</p>
+				<p>47 contributions around 'housing' and listed as an interest in their biography.</p>
 				<ul>
 					<li>Member of <a href="#" >1 related commitee</a></li>
 					<li><a href="#" >5 questions tabled</a></li>
@@ -111,13 +119,13 @@
 		</div>
 
 
-		<div class="card" data-house="lords" data-contribution-oral="true", data-contribution-written="true", data-contribution-debate="true", data-contribution-edm="true">
+		<div class="card" data-house="lords" data-contribution-oral="true" data-contribution-written="true" data-contribution-debate="true" data-contribution-edm="true" >
 			<img class="card__profile" alt="Baroness Hargreaves" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
 					<a href="#" >Baroness Hargreaves</a>
 				</h2>
-				<p>11 contributions</p>
+				<p>11 contributions around 'housing'.</p>
 				<ul>
 					<li><a href="#" >2 questions tabled</a></li>
 					<li>Spoken in <a href="#" >1 debates</a></li>		
@@ -126,13 +134,13 @@
 			</div>
 		</div>
 
-		<div class="card" data-house="commons" data-contribution-written="true", data-contribution-debate="true">
+		<div class="card" data-house="commons" data-contribution-written="true" data-contribution-debate="true" >
 			<img class="card__profile" alt="Jonathan Stuart MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
 					<a href="#" >Jonathan Stuart MP</a>
 				</h2>
-				<p>8 contributions</p>
+				<p>8 contributions around 'housing'.</p>
 				<ul>
 					<li><a href="#" >5 questions tabled</a></li>
 					<li>Spoken in <a href="#" >2 debates</a></li>		
@@ -141,13 +149,13 @@
 			</div>
 		</div>
 
-		<div class="card" data-house="commons" data-contribution-written="true", data-contribution-debate="true">
+		<div class="card" data-house="commons" data-contribution-written="true" data-contribution-debate="true">
 			<img class="card__profile" alt="Jennie Brown MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
 					<a href="#" >Jennie Brown MP</a>
 				</h2>
-				<p>7 contributions</p>
+				<p>7 contributions around 'housing'.</p>
 				<ul>
 					<li><a href="#" >1 questions tabled</a></li>
 					<li>Spoken in <a href="#" >6 debates</a></li>		
