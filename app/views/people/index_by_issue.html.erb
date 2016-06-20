@@ -5,7 +5,7 @@
 	<form class="results-filters form-group">
 		<h2 class="results-filters__group-title">Filters</h2>
 		<h3 class="results-filters__title">House:</h3>
-		<div class="two-column">
+		<div class="two-column house-filters">
 			<div class="form-group-checkbox">
 				<input type="checkbox" name="lords" checked="checked">
 				<label for="Lords" >Lords</label>
@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<h3 class="results-filters__title">Contribution type:</h3>
-		<div class="two-column">
+		<div class="two-column contribution-filters">
 			<div class="form-group-checkbox">
 				<input type="checkbox" name="commitee" checked="checked">
 				<label for="commitee">Member of a committee</label>
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 		<h3 class="results-filters__title">Biography:</h3>
-		<div class="two-column">
+		<div class="two-column contribution-filters">
 			<div class="form-group-checkbox">
 				<input type="checkbox" name="interest" checked="checked">
 				<label for="interest" >Issue listed as an interest</label>
@@ -69,7 +69,7 @@
 	<div class="results-members__list">
 		<p class="lede lede--results">6 MPs or Lords have contributed in Parliament around this issue this past year.</p>
 		
-		<div class="card" data-house="commons" data-contribution-committee="true" data-contribution-oral="true" data-contribution-written="true" data-contribution-debate="false" data-contribution-edm="true" data-interest="true">
+		<div class="card" data-house="commons" data-filter="commitee oral written debate bill edm interest">
 			<img class="card__profile" alt="Claire Miller MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -85,7 +85,7 @@
 			</div>
 		</div>
 
-		<div class="card" data-house="lords" data-contribution-committee="true" data-contribution-oral="true" data-contribution-written="true" data-contribution-debate="true" >
+		<div class="card" data-house="lords" data-filter="commitee oral written debate">
 			<img class="card__profile" alt="Lord Stratton" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -102,7 +102,7 @@
 		</div>
 
 		
-		<div class="card" data-house="commons" data-contribution-committee="true" data-contribution-oral="true" data-contribution-written="true" data-contribution-debate="true" data-contribution-edm="true" data-interest="true">
+		<div class="card" data-house="commons" data-filter="commitee oral written debate bill edm interest">
 			<img class="card__profile" alt="Rt Hon Dennis Smith MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -119,7 +119,7 @@
 		</div>
 
 
-		<div class="card" data-house="lords" data-contribution-oral="true" data-contribution-written="true" data-contribution-debate="true" data-contribution-edm="true" >
+		<div class="card" data-house="lords" data-filter="oral written debate edm">
 			<img class="card__profile" alt="Baroness Hargreaves" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -134,7 +134,7 @@
 			</div>
 		</div>
 
-		<div class="card" data-house="commons" data-contribution-written="true" data-contribution-debate="true" >
+		<div class="card" data-house="commons" data-filter="written debate">
 			<img class="card__profile" alt="Jonathan Stuart MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -149,7 +149,7 @@
 			</div>
 		</div>
 
-		<div class="card" data-house="commons" data-contribution-written="true" data-contribution-debate="true">
+		<div class="card" data-house="commons" data-filter="written debate">
 			<img class="card__profile" alt="Jennie Brown MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
@@ -163,9 +163,6 @@
 				<a href="#" >See all activity</a>
 			</div>
 		</div>
-
-
-
 
 
 	</div>

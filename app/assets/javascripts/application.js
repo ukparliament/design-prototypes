@@ -23,13 +23,21 @@ $(document).on("page:change", main);
 
 function main() {
 	$("input[type=checkbox]").click(function() {
-		var dataType = $(this).attr("name");
-		if (dataType === "commons" || dataType === "lords") {
-			filterMembersByHouse.call(this, dataType);
-		}
-		else {
-			filterMembersByContribution.call(this, dataType);
-		}	
+		var contributionFilters = $(".contribution-filters input[type=checkbox]");
+		var contributionFilterState = getFilterState(contributionFilters);
+		var houseFilters = $(".house-filters input[type=checkbox]");
+		var houseFilterState = getFilterState(houseFilters);
+		// var dataType = $(this).attr("name");
+		// if (dataType === "commons" || dataType === "lords") {
+		// 	filterMembersByHouse.call(this, dataType);
+		// 	filterMembersByData(filters);
+		// }
+		// else {
+		// 	filterMembersByData(filters);
+		// }
+		filterMembers(contributionFilterState, 'filter', 'fvisible');
+		filterMembers(houseFilterState, 'house', 'hvisible');
+		updateResults();
 	});
 
 	$("a[href='#']").click(function() {
@@ -37,21 +45,47 @@ function main() {
 	});
 
 	function filterMembersByHouse(house) {
+		// var cards = $('.card');
+		// for(var i = 0; i < cards.length; i++){
+		// 	if($(card[i]).data('house') === house){
+		// 	}
+		// }
 		if($(this).prop("checked")) {
 			$('div[data-house='+house+']').show();
+			console.log('apple');
 		}
 		else {
 			$('div[data-house='+house+']').hide();
+			console.log('strawberry');
 		}
 	}
 
+	function filterMembers(filters, inputAttribute, outputAttribute) {
+		var cards = $('.card');
+		cards.each(function(index, item) {
+			var dataAttributes = $(item).data(inputAttribute).split(' ');
+			var intersection = dataAttributes.filter(function(tag) {
+			    return filters[tag];
+			});
+			$(item).data(outputAttribute, intersection.length !== 0);
+ 		});
+	}
 
-	function filterMembersByContribution(type) {
-		if($(this).prop("checked")) {
-			$('div[data-contribution-' + type + '=true]').show();
-		}
-		else {
-			$('div[data-contribution-' + type + '=true]').hide();
-		}
+	function getFilterState(inputs){
+		var filters = {};
+		inputs.each(function(index, item) { filters[item.name] = item.checked });
+		return filters;
+	}
+
+	function updateResults(){
+		var cards = $('.card');
+		cards.each(function(index, item) {
+			var jItem = $(item);
+			if(jItem.data('fvisible') && jItem.data('hvisible')){
+				jItem.show();
+			}else{
+				jItem.hide();
+			}
+		})
 	}
 }
