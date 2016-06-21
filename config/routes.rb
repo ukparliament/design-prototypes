@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'barebones' => 'application#barebones'
   get 'search_results' => 'application#search_results'
   get 'find_members' => 'application#find_members'
+  get 'no_results' => 'application#no_results'
+  get 'index_by_issue_v2' => 'application#index_by_issue_v2'
 
   resources :issues, only: [:index] do
     get '/people(.:format)', to: 'people#index_by_issue', as: 'people'
