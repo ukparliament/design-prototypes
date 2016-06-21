@@ -22,6 +22,15 @@ $(document).ready(main);
 $(document).on("page:change", main);
 
 function main() {
+
+	$(".search-submit").click(function(e) {
+		var searchText = $("#edit-search").val().toLowerCase();
+		if (searchText == "right to buy") {
+			e.preventDefault();
+			window.location = "no_results"
+		}
+	});
+
 	$("input[type=checkbox]").click(function() {
 		var contributionFilters = $(".contribution-filters input[type=checkbox]");
 		var contributionFilterState = getFilterState(contributionFilters);
