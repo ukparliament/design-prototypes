@@ -16,6 +16,10 @@ class ApplicationController < ActionController::Base
 
   end
 
+  def  member_issue_activity
+
+  end  
+
   def barebones
 
   end
