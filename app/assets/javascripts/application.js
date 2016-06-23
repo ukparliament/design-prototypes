@@ -31,6 +31,7 @@ function main() {
 		}
 	});
 
+
 	$("input[type=checkbox]").click(function() {
 		var contributionFilters = $(".contribution-filters input[type=checkbox]");
 		var contributionFilterState = getFilterState(contributionFilters);
@@ -47,11 +48,17 @@ function main() {
 		filterMembers(contributionFilterState, 'filter', 'fvisible');
 		filterMembers(houseFilterState, 'house', 'hvisible');
 		updateResults();
+		updateCounter();
 	});
 
 	$("a[href='#']").click(function() {
 		alert("This is a prototype so this link doesn't go anywhere yet.");
 	});
+
+	function updateCounter() {
+		var visibleCards = $(".card:visible").length;
+		$(".js-results-counter").text(visibleCards);
+	}
 
 	function filterMembersByHouse(house) {
 		// var cards = $('.card');
