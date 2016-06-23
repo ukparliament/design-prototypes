@@ -17,7 +17,11 @@
 
 "use strict";
 
-$(document).ready(function() {
+$(document).ready(main);
+
+$(document).on("page:change", main);
+
+function main() {
 	$("input[type=checkbox]").click(function() {
 		var dataType = $(this).attr("name");
 		if (dataType === "commons" || dataType === "lords") {
@@ -50,4 +54,4 @@ $(document).ready(function() {
 			$('div[data-contribution-' + type + '=true]').hide();
 		}
 	}
-});
+}
