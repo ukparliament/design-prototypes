@@ -16,7 +16,19 @@ class ApplicationController < ActionController::Base
 
   end
 
+  def  member_issue_activity
+
+  end  
+
   def barebones
+
+  end
+
+  def no_results
+
+  end
+
+  def  index_by_issue_v2
 
   end
 

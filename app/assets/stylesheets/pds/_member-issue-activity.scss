@@ -1,0 +1,23 @@
+.person-summary {
+	@include grid-column(1 / 4);
+	float: right !important;	// sorry! couldn't work out how to override float left on grid mixin without !important. 
+}
+
+.person-summary__title {
+	font-size: 1rem;
+	margin-bottom: -1rem;
+	margin-top: 1rem;
+}
+
+.person-summary__details {
+	margin-bottom: 1rem;
+}
+
+.person-activity {
+	@include grid-column(3 / 4);
+}
+
+.person-activity__title,
+.person-contribution__title {
+	margin-top: 0;
+}
