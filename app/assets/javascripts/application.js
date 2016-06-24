@@ -68,11 +68,9 @@ function main() {
 		// }
 		if($(this).prop("checked")) {
 			$('div[data-house='+house+']').show();
-			console.log('apple');
 		}
 		else {
 			$('div[data-house='+house+']').hide();
-			console.log('strawberry');
 		}
 	}
 
