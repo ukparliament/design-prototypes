@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
 
   end
 
-  def  index_by_issue_v2
+  def  groups
 
   end
 

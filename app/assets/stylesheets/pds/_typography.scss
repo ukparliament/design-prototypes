@@ -54,20 +54,20 @@ h2,
 
 h3,
 .h3 {
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin: 2.25rem 0 1rem;
   line-height: 1.3;
 }
 
 h4,
 .h4 {
-  font-size: 1.125rem;
+  font-size: 1.313rem;
   margin: 2rem 0 1rem;
 }
 
 h5,
 .h5 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin: 2rem 0 1rem;
 }
 
@@ -101,5 +101,29 @@ h6,
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
+}
+
+.section-title {
+  @extend h2;
+  color: $grey60;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.section-title__link,
+.section-title__link:hover,
+.section-title__link:active,
+.section-title__link:visited {
+  color: $grey60;
+  text-decoration: none;
+}
+
+.section-title__link:hover {
+  text-decoration: underline;
+}
+
+.sub-section-title {
+  @extend h1;
+  margin: 0 0 2.5rem 0;
 }
 

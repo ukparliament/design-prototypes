@@ -13,7 +13,6 @@
 	}
 }
 
-
 .results-filters {
 	background-color: $grey05;
 	padding: 1rem;
@@ -45,6 +44,15 @@
 	@extend h4;
 	margin-bottom: 0.5rem;
 }
+
+.sort-cards {
+	margin-bottom: 2rem;
+}
+
+.sort-cards__label {
+	display: block;
+}
+
 
 .card:first-of-type {
 	// border-top: 2px solid $grey20;
