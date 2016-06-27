@@ -12,12 +12,9 @@ services:
   web:
     build: .
     volumes:
-       - "web-data:/app"
+       - .:/app
     ports:
       - "3000"
     labels:
       - "traefik.backend=design-prototypes"
       - "traefik.frontend.rule=Host:design-prototypes.docker.localhost"
-volumes:
-    web-data:
-      driver: local

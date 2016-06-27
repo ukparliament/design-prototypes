@@ -6,7 +6,7 @@ ENV APP_USER parliament
 # create user to run app in user space
 RUN set -x && groupadd -g 5000 $APP_USER && adduser --disabled-password --uid 5000 --gid 5000 --gecos '' $APP_USER
 
-ENV RAILS_ROOT /opt/find_your_mp
+ENV RAILS_ROOT /app
 
 RUN mkdir -p $RAILS_ROOT
 
@@ -26,7 +26,7 @@ ARG GIT_SHA=unknown
 ARG GIT_TAG=unknown
 LABEL git-sha=$GIT_SHA \
 	      git-tag=$GIT_TAG
-	      
+
 # EXPOSE 3000
 
 CMD ["passenger", "start"]
