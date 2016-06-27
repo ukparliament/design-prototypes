@@ -1,14 +1,23 @@
-web:
-  build: .
-  volumes:
-    - .:/opt/find_your_mp
-  ports:
-    - "3000"
-lb:
-  image: dockercloud/haproxy
-  links:
-    - web
-  volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
-  ports:
-    - 80:80
+version: '2'
+services:
+  traefik:
+    image: traefik
+    command: --web --docker --docker.domain=docker.localhost --logLevel=DEBUG
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /dev/null:/traefik.toml
+  web:
+    build: .
+    volumes:
+       - "web-data:/app"
+    ports:
+      - "3000"
+    labels:
+      - "traefik.backend=design-prototypes"
+      - "traefik.frontend.rule=Host:design-prototypes.docker.localhost"
+volumes:
+    web-data:
+      driver: local
