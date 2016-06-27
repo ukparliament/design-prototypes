@@ -84,7 +84,7 @@ h6,
 .subhead {
   margin-top: -1rem;
   font-weight: 400;
-  color: #777;
+  color: $grey60;
 }
 
 .event__date {
@@ -96,3 +96,10 @@ h6,
 .event__heading {
   margin-top: 0;
 }
+
+.filter-title__sub {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+

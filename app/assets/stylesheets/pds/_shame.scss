@@ -12,6 +12,13 @@ a.text-white:visited,
 	@extend h3;
 	color: $grey60;
 	margin-bottom: -2rem;
+	font-size: 1rem;
+}
+
+a.section,
+a.section:hover,
+a.section:visited {
+	color: $grey60;
 }
 
 .two-column {

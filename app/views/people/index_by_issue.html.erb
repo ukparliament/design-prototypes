@@ -1,4 +1,4 @@
-<p class="section">Issues / Housing</p>
+<p class="section"><a href="#" class="section" >Issues</a> / <a href="#" class="section" >Housing</a></p>
 <h1>Members interests and activities</h1>
 
 <div class="results-members">
@@ -50,10 +50,10 @@
 			</div>
 		</div>
 
-		<h3 class="results-filters__title">Time:</h3>
+		<h3 class="results-filters__title">Time: <span class="filter-title__sub">(calendar year)</span></h3>
 		<div>
 			<label for="time" class="visually-hidden">Time:</label>
-			<select name="time" >
+				<select name="time" >
 				<option value="Past week" disabled>Past week</option>
 				<option value="Past month" disabled>Past month</option>
 				<option value="Past 6 months" disabled>Past 6 months</option>
@@ -69,8 +69,9 @@
 	<div class="results-members__list">
 		<p class="lede lede--results"><span class="js-results-counter">6</span> MPs or Lords have contributed in Parliament around this issue in the past calendar year.</p>
 		
-<!-- 		<img class="spinner" src="<%= path_to_image('temp-spinner.gif') %>" alt="" />
- -->
+<!--  		<img class="spinner hidden" src="<%= path_to_image('temp-spinner.gif') %>" alt="" />
+ --> 
+
 		<div class="card" data-house="commons" data-filter="committee oral written debate bill edm interest">
 			<img class="card__profile" alt="Claire Miller MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
