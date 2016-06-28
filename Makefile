@@ -23,9 +23,7 @@ deploy-ci:
     export DOCKER_HOST=$(DOCKER_SWARM_URL) && export IMAGE_NAME=$(NAME):$(VERSION) && docker-compose -f docker-compose.ci.yml down && docker-compose -f docker-compose.ci.yml up -d
 
 run:
-	docker-compose build
 	docker-compose up -d
-	@echo Browse to http://`eval docker-machine ip`
 
 destroy:
 	docker-compose down

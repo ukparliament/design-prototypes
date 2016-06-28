@@ -2,21 +2,37 @@
 
 ## Installation
 
-To install Docker visit https://docs.docker.com/mac/step_one/
+Install Docker for Mac from here - https://docs.docker.com/docker-for-mac/
 
-If you haven't already created a boot2docker VM then run 
+Install Docker for Windows from here - https://docs.docker.com/docker-for-windows/
+
+## Setup
+
+1. Execute your host file using:
 
 ```bash
-$ docker-machine create --driver virtualbox default
+$ sudo nano /etc/hosts
 ```
 
-## Usage
+2. Add the following line:
+
+```bash
+$ *.docker.localhost localhost
+```
+
+3. Execute the following command:
+
+```bash
+$ make build
+```
+
+4. Execute the following command:
 
 ```bash
 $ make run
 ```
 
-Now browse to the URL provided from the "make run" command above.
+Now browse to http://design-prototypes.docker.localhost
 
 ### Destroy
 ```bash
