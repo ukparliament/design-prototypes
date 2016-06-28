@@ -10,6 +10,11 @@ Install Docker for Windows from here - https://docs.docker.com/docker-for-window
 
 Edit your host file and add the following line
 
+| O.S           | Location                                  |
+| ------------- |:-----------------------------------------:|
+| OSX           | /etc/host                                 |
+| Windows       | C:\Windows\System32\drivers\etc\hosts     |
+
 ```bash
 $ sudo nano /etc/hosts
 $ *.docker.localhost localhost
