@@ -16,7 +16,6 @@ Edit your host file and add the following line
 | Windows       | C:\Windows\System32\drivers\etc\hosts     |
 
 ```bash
-$ sudo nano /etc/hosts
 $ *.docker.localhost localhost
 ```
 
