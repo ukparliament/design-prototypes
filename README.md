@@ -8,27 +8,17 @@ Install Docker for Windows from here - https://docs.docker.com/docker-for-window
 
 ## Setup
 
-1. Execute your host file using:
+Edit your host file and add the following line
 
 ```bash
 $ sudo nano /etc/hosts
-```
-
-2. Add the following line:
-
-```bash
 $ *.docker.localhost localhost
 ```
 
-3. Execute the following command:
+Execute the following commands:
 
 ```bash
 $ make build
-```
-
-4. Execute the following command:
-
-```bash
 $ make run
 ```
 
