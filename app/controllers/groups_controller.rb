@@ -1,4 +1,4 @@
-class PeopleController < ApplicationController
+class GroupsController < ApplicationController
 
 	layout "pds_template"
 	

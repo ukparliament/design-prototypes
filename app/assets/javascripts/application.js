@@ -55,26 +55,19 @@ function main() {
 		alert("This is a prototype so this link doesn't go anywhere yet.");
 	});
 
-	function updateCounter() {
-		var visibleCards = $(".card:visible").length;
-		$(".js-results-counter").text(visibleCards);
-	}
-
-	function filterMembersByHouse(house) {
-		// var cards = $('.card');
-		// for(var i = 0; i < cards.length; i++){
-		// 	if($(card[i]).data('house') === house){
-		// 	}
-		// }
-		if($(this).prop("checked")) {
-			$('div[data-house='+house+']').show();
-			console.log('apple');
-		}
-		else {
-			$('div[data-house='+house+']').hide();
-			console.log('strawberry');
-		}
-	}
+	// function filterMembersByHouse(house) {
+	// 	// var cards = $('.card');
+	// 	// for(var i = 0; i < cards.length; i++){
+	// 	// 	if($(card[i]).data('house') === house){
+	// 	// 	}
+	// 	// }
+	// 	if($(this).prop("checked")) {
+	// 		$('div[data-house='+house+']').fadeIn(100);
+	// 	}
+	// 	else {
+	// 		$('div[data-house='+house+']').fadeOut(100);
+	// 	}
+	// }
 
 	function filterMembers(filters, inputAttribute, outputAttribute) {
 		var cards = $('.card');
@@ -103,5 +96,10 @@ function main() {
 				jItem.hide();
 			}
 		})
+	}
+
+	function updateCounter() {
+		var visibleCards = $('.card:visible').length;
+		$('.js-results-counter').text(visibleCards);
 	}
 }

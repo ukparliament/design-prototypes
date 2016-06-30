@@ -1,5 +1,13 @@
-<p class="section">Issues / Housing</p>
-<h1>Members interests and activities</h1>
+<!-- 	<p class="section"><a href="#" class="section" >Issues</a> / <a href="#" class="section" >Housing</a> / People</p> -->
+	<h1 class="section-title"><a href="#" class="section-title__link" >Housing</a> </h1>
+<h2 class="sub-section-title">Members</h2>
+
+
+<ul class="tabs">
+	<li class="tab"><a href="" class="tab__button tab__button--active">Individuals</a></li><li class="tab"><a href="groups" class="tab__button" style="color:#fff">Groups</a></li>
+</ul>
+
+<h3 class="h2">MPs and Lords activity around 'housing'</h3>
 
 <div class="results-members">
 	<form class="results-filters form-group">
@@ -50,7 +58,7 @@
 			</div>
 		</div>
 
-		<h3 class="results-filters__title">Time:</h3>
+		<h3 class="results-filters__title">Time: <span class="filter-title__sub">(calendar year)</span></h3>
 		<div>
 			<label for="time" class="visually-hidden">Time:</label>
 			<select name="time" >
@@ -67,21 +75,34 @@
 	</form>
 
 	<div class="results-members__list">
-		<p class="lede lede--results"><span class="js-results-counter">6</span> MPs or Lords have contributed in Parliament around this issue this past year.</p>
+		<p class="lede lede--results"><span class="js-results-counter">6</span> MPs or Lords have contributed in Parliament around this issue in the past calendar year.</p>
+
+		<form class="sort-cards">
+			<label for="sort-members" class="sort-cards__label">Sort members by:</label>
+			<select name="sort-members" >
+				<option value="" >Number of contributions</option>
+				<option value="" disabled>Proportion of a member's total contributions</option>
+				<option value="" disabled>Alphabetical</option>
+				<option value="" disabled>Most recent contributers</option>
+			</select>
+		</form>
 		
+<!--  		<img class="spinner hidden" src="<%= path_to_image('temp-spinner.gif') %>" alt="" />
+ --> 
+
 		<div class="card" data-house="commons" data-filter="committee oral written debate bill edm interest">
 			<img class="card__profile" alt="Claire Miller MP" src="<%= path_to_image('avatar.png') %>" />
 			<div class="card__details">
 				<h2 class="card__title">
 					<a href="#" >Claire Miller MP</a>
 				</h2>
-				<p>47 contributions around 'housing' and listed as an interest in their biography.</p>
-				<ul>
-					<li>Member of <a href="#" >1 related committee</a></li>
-					<li><a href="#" >23 questions tabled</a></li>
-					<li>Spoken in <a href="#" >14 debates</a></li>		
+				<p><a href="../../member_issue_activity" >21 contributions</a> around 'housing'</p>
+				<ul class="milli">
+					<li><a href="#" >Minister of Housing</a></li>
+					<li><a href="#" >Member of the 'Communities and Local Government Committee'</a></li>
+					<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
+					<li><a href="#" >Member of the 'Housing in the North'</a> All-Party Parliamentary Group</li>
 				</ul>
-				<a href="#" >See all activity</a>
 			</div>
 		</div>
 
@@ -91,13 +112,12 @@
 				<h2 class="card__title">
 					<a href="#" >Lord Stratton</a>
 				</h2>
-				<p>20 contributions around 'housing'.</p>
-				<ul>
-					<li>Member of <a href="#" >1 related committee</a></li>
-					<li><a href="#" >1 questions tabled</a></li>
-					<li>Spoken in <a href="#" >15 debates</a></li>		
+				<p><a href="../../member_issue_activity" >19 contributions</a> around 'housing'</p>
+				<ul class="milli">
+					<li><a href="#" >Member of the 'Communities and Local Government Committee'</a></li>
+					<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
+					<li><a href="#" >Member of the 'Housing in the North'</a> All-Party Parliamentary Group</li>
 				</ul>
-				<a href="#" >See all activity</a>
 			</div>
 		</div>
 
@@ -108,13 +128,11 @@
 				<h2 class="card__title">
 					<a href="#" >Rt Hon Dennis Smith MP</a>
 				</h2>
-				<p>47 contributions around 'housing' and listed as an interest in their biography.</p>
-				<ul>
-					<li>Member of <a href="#" >1 related committee</a></li>
-					<li><a href="#" >5 questions tabled</a></li>
-					<li>Spoken in <a href="#" >6 debates</a></li>		
+				<p><a href="../../member_issue_activity" >15 contributions</a> around 'housing'</p>
+				<ul class="milli">
+					<li><a href="#" >Member of the 'Communities and Local Government Committee'</a></li>
+					<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
 				</ul>
-				<a href="#" >See all activity</a>
 			</div>
 		</div>
 
@@ -125,12 +143,10 @@
 				<h2 class="card__title">
 					<a href="#" >Baroness Hargreaves</a>
 				</h2>
-				<p>11 contributions around 'housing'.</p>
-				<ul>
-					<li><a href="#" >2 questions tabled</a></li>
-					<li>Spoken in <a href="#" >1 debates</a></li>		
+				<p><a href="../../member_issue_activity" >14 contributions</a> around 'housing'</p>
+				<ul class="milli">
+					<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
 				</ul>
-				<a href="#" >See all activity</a>
 			</div>
 		</div>
 
@@ -140,12 +156,10 @@
 				<h2 class="card__title">
 					<a href="#" >Jonathan Stuart MP</a>
 				</h2>
-				<p>8 contributions around 'housing'.</p>
-				<ul>
-					<li><a href="#" >5 questions tabled</a></li>
-					<li>Spoken in <a href="#" >2 debates</a></li>		
+				<p><a href="../../member_issue_activity" >12 contributions</a> around 'housing'</p>
+				<ul class="milli">
+					<li><a href="#" >Member of the 'Housing in the North'</a> All-Party Parliamentary Group</li>
 				</ul>
-				<a href="#" >See all activity</a>
 			</div>
 		</div>
 
@@ -155,12 +169,7 @@
 				<h2 class="card__title">
 					<a href="#" >Jennie Brown MP</a>
 				</h2>
-				<p>7 contributions around 'housing'.</p>
-				<ul>
-					<li><a href="#" >1 questions tabled</a></li>
-					<li>Spoken in <a href="#" >6 debates</a></li>		
-				</ul>
-				<a href="#" >See all activity</a>
+				<p><a href="../../member_issue_activity" >9 contributions</a> around 'housing'</p>
 			</div>
 		</div>
 

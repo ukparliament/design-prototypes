@@ -49,3 +49,76 @@ a:hover, a:focus {
 	background-color: $blue-darker;
 	color: $white;
 }
+
+.spinner {
+	display: block;
+    margin: 2rem auto;
+}
+
+.tabs {
+	border-bottom: 1px solid $grey20;
+	padding-bottom: calc(0.75rem - 2px);
+	// padding-left: 1rem;
+	margin: 0 0 2rem 0;
+}
+
+.tab {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	// font-size: 1.125rem;
+}
+
+.tab__button {
+	background-color: $blue;
+	padding: 0.75rem 1.5rem;
+	border-bottom: 2px solid $white;
+}
+
+.tab__button:hover,
+.tab__button:active,
+.tab__button:focus {
+	background-color: $blue-darker;
+	color: $white;
+}
+
+.tab__button:visited {
+	color: $white;
+}
+
+.tab__button--active {
+	background-color: $white;
+	border: 1px solid $grey20;
+	border-bottom: 2px solid $white;
+}
+.tab__button--active:hover,
+.tab__button--active:active,
+.tab__button--active:visited,
+.tab__button--active {
+	color: $black;
+	text-decoration: none;
+	background-color: $white;
+}
+
+.groups {
+	border-left: 5px solid $grey20;
+	padding-left: 2rem;
+}
+
+.groups-role__title {
+	width: 130px;
+	float: left;
+}
+
+.groups-role__members {
+	margin-top: 0;
+	overflow: hidden;
+}
+
+.groups-members {
+	@extend %contain-floats;
+}
+
+.groups__title {
+}
+

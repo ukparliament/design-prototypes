@@ -5,21 +5,38 @@ a.text-white,
 a.text-white:hover,
 a.text-white:visited,
 .text-white {
-  color: $white;
+	color: $white;
 }
+
+a.text-grey,
+a.text-grey:hover,
+a.text-grey:visited,
+.text-grey {
+	color: $grey60;
+}
+
 
 .section {
 	@extend h3;
 	color: $grey60;
 	margin-bottom: -2rem;
+	font-size: 1rem;
+}
+
+a.section,
+a.section:hover,
+a.section:visited {
+	color: $grey60;
 }
 
 .two-column {
-  columns: 2;
+	@include media(tablet){
+		columns: 2;
+	}
 }
 
 .three-column {
-  columns: 2;
+	columns: 3;
   // column-fill: auto;
   // height: 100px;
 }

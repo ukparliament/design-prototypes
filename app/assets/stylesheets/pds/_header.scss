@@ -2,9 +2,13 @@
 .sitewide-message {
 	background-color: rgba(0, 0, 0, 1);
 	padding: 0.75rem 0;
-	color: #fff;
-	font-size: 0.875rem;
-	text-align: center;
+
+
+	p {
+		color: #fff;
+		font-size: 0.875rem;
+		text-align: center;		
+	}
 
 	p:first-of-type {
 		margin-top: 0;

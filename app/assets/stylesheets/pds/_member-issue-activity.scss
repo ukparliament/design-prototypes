@@ -1,6 +1,23 @@
 .person-summary {
-	@include grid-column(1 / 4);
-	float: right !important;	// sorry! couldn't work out how to override float left on grid mixin without !important. 
+	@include grid-column(4 / 4);
+	
+	@include media(tablet){
+		@include grid-column(1 / 4);
+		float: right !important; // sorry! couldn't work out how to override float left on grid mixin without !important. 
+	}
+}
+
+.person-summary__profile {
+	float: right;
+	max-width: 150px;
+	overflow: hidden;
+	margin-left: 0.5rem;
+
+	@include media(tablet){
+		float: none;
+		max-width: auto;
+		margin-left: 0;
+	}
 }
 
 .person-summary__title {
@@ -14,10 +31,18 @@
 }
 
 .person-activity {
-	@include grid-column(3 / 4);
+	@include grid-column(4 / 4);
+
+	@include media(tablet){
+		@include grid-column(3 / 4);
+	}
 }
 
 .person-activity__title,
 .person-contribution__title {
 	margin-top: 0;
+}
+
+.person-summary__container {
+	overflow: hidden;
 }
