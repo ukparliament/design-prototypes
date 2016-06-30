@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   resources :issues, only: [:index] do
     get '/people(.:format)', to: 'people#index_by_issue', as: 'people'
+    get '/groups(.:format)', to: 'groups#index_by_issue', as: 'groups'
   end
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

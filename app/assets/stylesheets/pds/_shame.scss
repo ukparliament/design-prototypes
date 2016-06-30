@@ -5,8 +5,16 @@ a.text-white,
 a.text-white:hover,
 a.text-white:visited,
 .text-white {
-  color: $white;
+	color: $white;
 }
+
+a.text-grey,
+a.text-grey:hover,
+a.text-grey:visited,
+.text-grey {
+	color: $grey60;
+}
+
 
 .section {
 	@extend h3;
@@ -22,11 +30,13 @@ a.section:visited {
 }
 
 .two-column {
-  columns: 2;
+	@include media(tablet){
+		columns: 2;
+	}
 }
 
 .three-column {
-  columns: 3;
+	columns: 3;
   // column-fill: auto;
   // height: 100px;
 }

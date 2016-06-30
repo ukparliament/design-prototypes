@@ -22,10 +22,12 @@ p {
   font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
 }
 
-p {
+p,
+.p {
   -webkit-font-feature-settings: "kern";
   font-feature-settings: "kern";
   font-kerning: normal;
+  font-size: 1rem;
 }
 
 ul, ol {
@@ -81,6 +83,10 @@ h6,
   font-size: 1.25rem;
 }
 
+.milli {
+  font-size: 0.875rem;
+}
+
 .subhead {
   margin-top: -1rem;
   font-weight: 400;
@@ -115,7 +121,8 @@ h6,
 .section-title__link:active,
 .section-title__link:visited {
   color: $grey60;
-  text-decoration: none;
+  text-decoration: underline;
+  font-size:1.313rem;
 }
 
 .section-title__link:hover {
@@ -125,5 +132,10 @@ h6,
 .sub-section-title {
   @extend h1;
   margin: 0 0 2.5rem 0;
+}
+
+.person-contribution__details {
+  color: $grey80;
+  font-size: 0.875rem;
 }
 
