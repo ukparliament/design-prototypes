@@ -19,16 +19,15 @@ Edit your host file and add the following line
 $ *.docker.localhost localhost
 ```
 
-Execute the following commands:
+Browse to the directory on your local machine and execute the following commands:
 
 ```bash
-$ make build
 $ make run
 ```
 
 Now browse to http://design-prototypes.docker.localhost
 
-### Destroy
+### Rebuild the application
 ```bash
-$ make destroy
+$ make rebuild
 ```
