@@ -1,0 +1,21 @@
+version: '2'
+services:
+  web:
+    image: ${IMAGE_NAME}
+    volumes:
+       - "web-data:/app"
+    ports:
+      - "3000"
+    networks:
+       - ci
+    labels:
+      - "traefik.backend=design-prototypes"
+      - "traefik.frontend.rule=Host:design-prototypes.ci.ukpds.org"
+
+networks:
+    ci:
+      driver: overlay
+
+volumes:
+    web-data:
+      driver: local
