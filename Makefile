@@ -15,9 +15,12 @@ rebuild:
 	docker-compose down
 	docker-compose up -d
 
-test :
+test:
 	docker-compose run web rake spec
 	docker-compose down
+
+build:
+	docker-compose build
 
 push:
 	docker build -t $(NAME):$(VERSION) .
