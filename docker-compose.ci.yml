@@ -13,9 +13,8 @@ services:
       - "traefik.frontend.rule=Host:design-prototypes.ci.ukpds.org"
 
 networks:
-  default:
-    external:
-      name: ci
+  ci:
+    external: true
 
 volumes:
     web-data:
