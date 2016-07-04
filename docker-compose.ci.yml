@@ -13,8 +13,9 @@ services:
       - "traefik.frontend.rule=Host:design-prototypes.ci.ukpds.org"
 
 networks:
-    ci:
-      driver: overlay
+  default:
+    external:
+      name: ci
 
 volumes:
     web-data:
