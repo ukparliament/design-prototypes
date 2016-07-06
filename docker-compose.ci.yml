@@ -2,8 +2,6 @@ version: '2'
 services:
   web:
     image: ${IMAGE_NAME}
-    volumes:
-       - "web-data:/app"
     ports:
       - "3000"
     networks:
@@ -15,7 +13,3 @@ services:
 networks:
   ci:
     external: true
-
-volumes:
-    web-data:
-      driver: local
