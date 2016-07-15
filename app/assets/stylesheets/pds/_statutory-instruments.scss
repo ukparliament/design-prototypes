@@ -1,3 +1,52 @@
+.intro {
+	.intro__description, .intro__documents, .intro-type__details {
+		@extend .lede;
+	}
+
+	.intro-type__title {
+		margin-bottom: 3px;
+	}
+}
+
+.si-status {
+	p {
+		@extend .lede;
+		margin-top: 0;
+	}
+
+	h4 {
+		margin-bottom: 3px;
+	}
+}
+.event-outcome {
+	border: 3px solid $grey60;
+	padding: 15px;
+
+	.event-outcome__enforcement-date {
+		font-size: 2rem;
+		margin-top: 0;
+	}
+
+	.event-outcome__annullment-date, a {
+		@extend .lede;
+	}
+}
+
+.associated-links {
+	h4 {
+		margin-bottom: 0;
+		font-size: 1.25rem;
+	}
+
+	a {
+		@extend .lede;
+	}
+
+	.further-links__list {
+		margin-top: 0;
+	}
+}
+
 .subscribe-button {
 	color: $white;
 	background-color: $blue-bright;
@@ -5,3 +54,18 @@
 	font-weight: bold;
 }
 
+.event__alert {
+	background-color: #FEE176;
+}
+
+.past-events {
+	margin: 0;
+	padding: 0 0 16px;
+	background-color: #E7E7E7;
+}
+
+.future-events {
+	margin: 0;
+	padding: 15px 0 16px;
+	background-color: #F2F2F2;
+}
