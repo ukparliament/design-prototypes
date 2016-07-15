@@ -19,8 +19,10 @@
 	}
 }
 .event-outcome {
+	margin: 0;
 	border: 3px solid $grey60;
 	padding: 15px;
+	background-color: white;
 
 	.event-outcome__enforcement-date {
 		font-size: 2rem;
@@ -54,18 +56,24 @@
 	font-weight: bold;
 }
 
-.event__alert {
-	background-color: #FEE176;
+.timeline-event {
+	margin-left: 0;
+	list-style-type: none;
 }
 
-.past-events {
-	margin: 0;
-	padding: 0 0 16px;
+.timeline-past-events {
+	padding: 20px 15px;
 	background-color: #E7E7E7;
 }
 
-.future-events {
+.timeline-event__alert {
+	margin-left: -15px;
+	padding-left: 15px;
+	background-color: #FEE176;
+}
+
+.future-events-outcome {
 	margin: 0;
-	padding: 15px 0 16px;
+	padding: 15px 15px 50px 15px;
 	background-color: #F2F2F2;
 }
