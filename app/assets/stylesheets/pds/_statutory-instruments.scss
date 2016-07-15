@@ -1,3 +1,23 @@
+.intro {
+	.intro__description, .intro__documents, .intro-type__details {
+		@extend .lede;
+	}
+
+	.intro-type__title {
+		margin-bottom: 3px;
+	}
+}
+
+.si-status {
+	p {
+		@extend .lede;
+		margin-top: 0;
+	}
+
+	h4 {
+		margin-bottom: 3px;
+	}
+}
 .event-outcome {
 	border: 3px solid $grey60;
 	padding: 15px;
@@ -13,9 +33,17 @@
 }
 
 .associated-links {
-	h3 {
+	h4 {
 		margin-bottom: 0;
 		font-size: 1.25rem;
+	}
+
+	a {
+		@extend .lede;
+	}
+
+	.further-links__list {
+		margin-top: 0;
 	}
 }
 
