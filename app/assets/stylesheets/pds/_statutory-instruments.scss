@@ -1,3 +1,7 @@
+.statutory-instruments-list {
+	list-style-type: none;
+}
+
 .intro {
 	.intro__description, .intro__documents, .intro-type__details {
 		@extend .lede;
