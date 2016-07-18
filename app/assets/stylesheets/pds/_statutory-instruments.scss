@@ -33,6 +33,22 @@
 	}
 }
 
+.future-events {
+	position: relative;
+}
+
+
+.future-events::before {
+	content: "";
+	background: url("/assets/timeline-line.svg");
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	left: -15px;
+	top: 0;
+
+}
+
 .timeline-event__date {
 	margin-bottom: 5px;
 }
@@ -56,10 +72,12 @@
 }
 
 .event-outcome {
-	border: 3px solid $grey60;
+	border: 2px solid $grey60;
 	padding: 20px 15px 20px 15px;
-	margin: 0 -15px;
+	margin: 0 -17px;
 	background-color: $white;
+	position: relative;
+	margin-top: 60px;
 
 	.event-outcome__enforcement-date {
 		font-size: 2rem;
@@ -69,6 +87,17 @@
 	.event-outcome__annullment-date, a {
 		@extend .lede;
 	}
+}
+
+.event-outcome::before {
+	content: "";
+	background: url("/assets/timeline-baseline.svg");
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 80px;
+	width: 142px;
+	top: -80px;
+	left: 0px;
 }
 
 
