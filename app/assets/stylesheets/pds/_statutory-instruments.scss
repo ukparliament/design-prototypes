@@ -1,3 +1,7 @@
+.statutory-instruments-list {
+	list-style-type: none;
+}
+
 .intro {
 	.intro__description, .intro__documents, .intro-type__details {
 		@extend .lede;
@@ -79,14 +83,17 @@
 	position: relative;
 	margin-top: 60px;
 
-	.event-outcome__enforcement-date {
+	h1 {
 		font-size: 2rem;
 		margin-top: 0;
 	}
+}
 
-	.event-outcome__annullment-date, a {
-		@extend .lede;
-	}
+.event-outcome__houses {
+	@extend .lede;
+	
+	list-style-type: none;
+	color: $grey60;
 }
 
 .event-outcome::before {
@@ -100,6 +107,9 @@
 	left: 0px;
 }
 
+
+.event-outcome__text {
+	@extend .lede;
 
 .associated-links {
 	h4 {
