@@ -65,16 +65,22 @@
 	margin: 0 -15px;
 	background-color: $white;
 
-	.event-outcome__enforcement-date {
+	h1 {
 		font-size: 2rem;
 		margin-top: 0;
 	}
-
-	.event-outcome__annullment-date, a {
-		@extend .lede;
-	}
 }
 
+.event-outcome__houses {
+	@extend .lede;
+	
+	list-style-type: none;
+	color: $grey60;
+}
+
+.event-outcome__text {
+	@extend .lede;
+}
 
 .associated-links {
 	h4 {
