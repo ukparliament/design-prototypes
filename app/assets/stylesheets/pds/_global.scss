@@ -50,6 +50,10 @@ a:hover, a:focus {
 	color: $white;
 }
 
+.button:visited {
+	color: $white;
+}
+
 .spinner {
 	display: block;
     margin: 2rem auto;
