@@ -126,3 +126,13 @@ a:hover, a:focus {
 .groups__title {
 }
 
+.help-link::after {
+	content: "";
+	background: url("/assets/link-help.svg");
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
