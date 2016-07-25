@@ -123,16 +123,13 @@ a:hover, a:focus {
 	@extend %contain-floats;
 }
 
-.groups__title {
-}
-
-.help-link::after {
-	content: "";
-	background: url("/assets/link-help.svg");
+.definition-link {
+	background: url("/assets/link-help.svg") no-repeat;
 	width: 15px;
-	height: 15px;
+	height: 0;
+	padding: 15px 0 0 0;
+	margin: 0 0 0 3px; 
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 8px;
+	overflow: hidden;
 }
-
