@@ -85,9 +85,9 @@
 	margin: 0;
 }
 
-.timeline-event__house::before {
+.timeline-event::before {
 	content: "";
-	background: url("/assets/timeline-bi.svg");
+	background: url("/assets/timeline-past.svg");
 	height: 15px;
 	width: 15px;
 	position: absolute;
@@ -96,12 +96,8 @@
 	z-index: 99;
 }
 
-.timeline-event__house--commons::before {
-	background: url("/assets/timeline-commons.svg");
-}
-
-.timeline-event__house--lords::before {
-	background: url("/assets/timeline-lords.svg");
+.timeline-event--future::before {
+	background: url("/assets/timeline-future.svg");
 }
 
 .timeline-past::before,
