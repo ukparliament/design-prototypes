@@ -15,6 +15,9 @@ rebuild:
 	docker-compose down
 	docker-compose up -d
 
+clean:
+	docker rmi $$(docker images -q)
+
 test:
 	docker-compose run web rake spec
 	docker-compose down
