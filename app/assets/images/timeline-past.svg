@@ -1,1 +1,13 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#858585;}</style></defs><title>timeline-past</title><circle class="cls-1" cx="5" cy="5" r="5"/><path class="cls-2" d="M5,10a5,5,0,1,1,5-5A5,5,0,0,1,5,10ZM5,2A3,3,0,1,0,8,5,3,3,0,0,0,5,2Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#858585;}
+</style>
+<title>timeline-past</title>
+<circle class="st0" cx="6" cy="6" r="6"/>
+<path class="st1" d="M6,11c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S8.8,11,6,11z M6,3C4.3,3,3,4.3,3,6s1.3,3,3,3s3-1.3,3-3S7.7,3,6,3z
+	"/>
+</svg>
