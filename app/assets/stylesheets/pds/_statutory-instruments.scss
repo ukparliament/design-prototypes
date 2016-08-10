@@ -87,7 +87,7 @@
 }
 
 .timeline {
-	@extend %outdent-to-full-width;
+	// @extend %outdent-to-full-width;
 	position: relative;
 	padding: 2rem 3rem 2rem;
 	margin-top: 1.75rem;
@@ -234,17 +234,20 @@
 
 	.si-details {
 		float: left;
-		padding-right: 1rem;
+		padding-right: 2rem;
 		width: calc(100% - 440px);
 	}
 
 
 	.timeline {
-		float: right;
 		width: 100%;
-		max-width: 440px;
 		padding-left: 3rem;
 		padding-right: 2rem;
+	}
+
+	.timeline--si {
+		float: right;
+		max-width: 440px;
 	}
 
 	.timeline-past::before,
