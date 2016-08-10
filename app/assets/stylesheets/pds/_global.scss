@@ -6,6 +6,12 @@ html {
   box-sizing: inherit;
 }
 
+
+.grid-row {
+	@extend %grid-row;
+}
+
+
 html {
 	color: $grey100;
 }
@@ -133,3 +139,32 @@ a:hover, a:focus {
 	vertical-align: middle;
 	overflow: hidden;
 }
+
+.collapsible-switch::before {
+    content: "";
+    background: url("/assets/link-help--black.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    @include media(tablet){
+      width: 0.875rem;
+      height: 0.875rem;
+  }
+}
+
+.callout {
+	padding: 0.5rem 1rem 0 1rem;
+	margin-bottom: 2.5rem;
+	margin-top: 2.5rem;
+	background-color: $grey05;
+	border: 2px solid $grey20;
+}
+
+.callout__title {
+	margin-top: 0;
+}
+
+

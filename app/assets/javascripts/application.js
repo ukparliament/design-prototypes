@@ -31,6 +31,24 @@ function main() {
 		}
 	});
 
+	$(".js-collapsible-content").addClass("hidden");
+
+	$(".js-collapsible__title").each(function(){
+		var titleCopy = $(this).text();
+		$(this).html('<a href="#" class="js-collapsible-switch collapsible-switch" >' + titleCopy + '</a>');
+	});
+	
+	$(".js-collapsible-switch").unbind().click( function(e) {
+		e.preventDefault();
+		var content = $(this).parent().next(".js-collapsible-content");
+		if (content.hasClass("hidden")){
+			content.removeClass("hidden");
+		}
+		else {
+			content.addClass("hidden");
+		}
+	});
+
 
 	$("input[type=checkbox]").click(function() {
 		var contributionFilters = $(".contribution-filters input[type=checkbox]");
@@ -51,9 +69,9 @@ function main() {
 		updateCounter();
 	});
 
-	$("a[href='#']").click(function() {
-		alert("This is a prototype so this link doesn't go anywhere yet.");
-	});
+	// $("a[href='#']").click(function() {
+	// 	alert("This is a prototype so this link doesn't go anywhere yet.");
+	// });
 
 	// function filterMembersByHouse(house) {
 	// 	// var cards = $('.card');

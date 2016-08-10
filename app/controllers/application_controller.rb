@@ -24,6 +24,10 @@ class ApplicationController < ActionController::Base
 
   end
 
+  def patterns
+
+  end
+
   def no_results
 
   end
