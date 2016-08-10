@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
 
   get 'barebones' => 'application#barebones'
+  get 'patterns' => 'application#patterns'  
   get 'search_results' => 'application#search_results'
   get 'find_members' => 'application#find_members'
   get 'no_results' => 'application#no_results'
