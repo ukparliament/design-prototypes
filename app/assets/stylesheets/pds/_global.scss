@@ -155,4 +155,16 @@ a:hover, a:focus {
   }
 }
 
+.callout {
+	padding: 0.5rem 1rem 0 1rem;
+	margin-bottom: 2.5rem;
+	margin-top: 2.5rem;
+	background-color: $grey05;
+	border: 2px solid $grey20;
+}
+
+.callout__title {
+	margin-top: 0;
+}
+
 

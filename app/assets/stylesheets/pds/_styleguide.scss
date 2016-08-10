@@ -14,24 +14,29 @@
 }
 
 .sg-pattern__title {
-  @extend .h4;
-  border-bottom: 1px solid $grey20;
+  @extend .milli;
+  border-bottom: 1px solid $grey100;
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.secondary-nav__item {
+.sg-nav__item {
   list-style: none;
   margin: 0;
   padding: 0.5rem 0;
 }
 
-.secondary-nav__link {
+.sg-nav__link {
   border-left: 6px solid $grey20;
   padding-left: 10px;
-
 }
 
-.secondary-nav__link.active {
+.sg-nav__link:hover, 
+.sg-nav__link:active, 
+.sg-nav__link:visited {
+  color: $grey100;
+}
+
+.sg-nav__link.active {
   border-color: $grey80;
 }
