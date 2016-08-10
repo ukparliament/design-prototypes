@@ -172,6 +172,10 @@
 	list-style-type: none;
 	color: $grey60;
 	margin-bottom: 1rem;
+	
+	@include media(tablet){
+		font-size: 0.875rem;
+	}	
 }
 
 .event-outcome__status {
@@ -227,7 +231,7 @@
 	.si-details {
 		float: left;
 		padding-right: 2rem;
-		width: calc(100% - 440px);
+		width: calc(100% - 400px);
 	}
 
 
@@ -239,7 +243,7 @@
 
 	.timeline--si {
 		float: right;
-		max-width: 440px;
+		max-width: 400px;
 	}
 
 	.timeline-past::before,
@@ -259,7 +263,7 @@
 	.associated-links {
 		margin-top: 0;
 		float: left;
-		width: calc(100% - 440px);
+		width: calc(100% - 400px);
 	}
 }
 
