@@ -4,14 +4,13 @@
 	margin-top: 0;
 }
 
-.intro-extra__title {
-	font-size: 0.875rem;
-	font-weight: normal;
-	margin-top: -0.5rem;
+.intro-extra {
+	margin-bottom: 1.5rem;
 }
 
 .intro-extra__content p {
 	font-size: 0.875rem;
+	margin-top: -0.5rem;
 }
 
 .si-status__title {
@@ -51,19 +50,29 @@
 		font-size: 0.875rem;
 	}
 }
+
 .timeline-extra__title,
 .timeline-extra__content p {
 	margin: 0 0 0.25rem;
 	font-size: 0.875rem;
 }
 
-.timeline-event__status {
-	margin-top: 1rem;
+.timeline-extra, .intro-extra__title {
+	.collapsible-switch {
+		font-weight: normal;
+	}
 }
 
+.intro-extra__title {
+	font-size: 0.875rem;
+	margin-top: -0.5rem;
+	.collapsible-switch {
+		margin-top: -0.5rem;
+	}
+}
 
-.timeline-extra__title {
-	font-weight: normal;
+.timeline-event__status {
+	margin-top: 1rem;
 }
 
 .timeline-event__button {
