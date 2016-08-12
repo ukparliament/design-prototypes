@@ -1,0 +1,12 @@
+lb:
+  image: 'dockercloud/haproxy:latest'
+  links:
+    - web
+  ports:
+    - '80:80'
+  volumes:
+    - '/var/run/docker.sock:/var/run/docker.sock'
+web:
+  image: 'ukparliament/design-prototypes'
+  ports:
+    - '3000'  # container port 3000 is specified in Dockerfile
