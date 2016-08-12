@@ -12,7 +12,7 @@ run:
 	docker-compose up -d
 
 runalone:
-	docker run -p 80:3000 ukparliament/design-prototypes
+	docker run -p 80:3000 $(NAME)
 	# Container port 3000 is specified in Dockerfile
 	# Browse to http://localhost:80 to see the application
 

@@ -1,4 +1,4 @@
 web:
-  image: 'ukparliament/design-prototypes'
+  image: 'ukpds/design-prototypes'
   ports:
     - '80:3000'
