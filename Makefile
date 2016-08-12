@@ -11,6 +11,17 @@ run:
 	docker-compose build
 	docker-compose up -d
 
+runalone:
+	docker run -p 80:3000 ukparliament/design-prototypes
+	# Container port 3000 is specified in Dockerfile
+	# Browse to http://localhost:80 to see the application
+
+run-docker-cloud:
+	docker-cloud stack up
+
+runalone-docker-cloud:
+	docker-cloud stack up -f docker-cloud.standalone.yml
+
 rebuild:
 	docker-compose down
 	docker-compose up -d
