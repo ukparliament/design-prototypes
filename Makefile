@@ -45,7 +45,7 @@ deploy-ci:
 	export DOCKER_HOST=$(DOCKER_SWARM_URL) && export IMAGE_NAME=$(NAME):$(VERSION) && docker-compose -f docker-compose.ci.yml down && docker-compose -f docker-compose.ci.yml up -d
 
 # http://serverfault.com/questions/682340/update-the-container-of-a-service-in-amazon-ecs?rq=1
-redeploy-ecs-ci:
+deploy-ecs-ci:
 	aws ecs register-task-definition --cli-input-json file://./aws_ecs/design-prototypes.json
 	aws ecs update-service --service DesignPrototypes --cluster ecs-ci --region eu-west-1 --task-definition DesignPrototypes
 
