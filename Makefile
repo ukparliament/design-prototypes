@@ -39,7 +39,9 @@ build:
 push:
 	docker build -t $(NAME):$(VERSION) -t $(NAME):latest .
 	docker push $(NAME):$(VERSION)
+	docker push $(NAME):latest
 	docker rmi $(NAME):$(VERSION)
+	docker rmi $(NAME):latest
 
 deploy-ci:
 	export DOCKER_HOST=$(DOCKER_SWARM_URL) && export IMAGE_NAME=$(NAME):$(VERSION) && docker-compose -f docker-compose.ci.yml down && docker-compose -f docker-compose.ci.yml up -d
