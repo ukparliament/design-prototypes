@@ -1,0 +1,20 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "DesignPrototypes",
+      "image": "ukpds/design-prototypes",
+      "cpu": 10,
+      "memory": 256,
+      "essential": true,
+      "command": [],
+      "portMappings": [
+        {
+          "hostPort": 81,
+          "containerPort": 3000,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "family": "DesignPrototypes"
+}
