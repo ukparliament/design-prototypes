@@ -83,13 +83,13 @@ a:hover, a:focus {
 	background-color: $blue;
 	padding: 0.75rem 1.5rem;
 	border-bottom: 2px solid $white;
+	color: $white;
 }
 
 .tab__button:hover,
 .tab__button:active,
 .tab__button:focus {
 	background-color: $blue-darker;
-	color: $white;
 }
 
 .tab__button:visited {
