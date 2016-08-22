@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
 
   end  
 
-  def barebones
+  def styleguide
 
   end
 
