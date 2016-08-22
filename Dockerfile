@@ -13,7 +13,7 @@ RUN mkdir -p $RAILS_ROOT
 # cache the gems
 COPY Gemfile $RAILS_ROOT/Gemfile
 COPY Gemfile.lock $RAILS_ROOT/Gemfile.lock
-RUN cd $RAILS_ROOT && bundle install && chown -R $APP_USER:$APP_USER $GEM_HOME
+RUN cd $RAILS_ROOT && env NOKOGIRI_USE_SYSTEM_LIBRARIES=true bundle install && chown -R $APP_USER:$APP_USER $GEM_HOME
 
 # add project
 COPY . $RAILS_ROOT
