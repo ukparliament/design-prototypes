@@ -1,11 +1,11 @@
 
 .sitewide-message {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: $grey05;
 	padding: 0.75rem 0;
 
 
 	p {
-		color: #fff;
+		color: $grey100;
 		font-size: 0.875rem;
 		text-align: center;		
 	}
@@ -16,7 +16,7 @@
 
 	p:first-of-type::before {
 		content: "";
-		background: url("/assets/alert--white.svg");
+		background: url("/assets/alert--black.svg");
 		background-repeat: no-repeat;
 		display: inline-block;
 		width: 0.813rem;
@@ -31,7 +31,7 @@
 }
 
 header {
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: $black;
 	padding: 1rem 0;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
