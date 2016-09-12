@@ -1,12 +1,19 @@
 .sg-menu {
-  width: 250px;
-  float: left;
-  margin-right: 4rem;
+
+  @include media(tablet){
+    @include grid-column(1 / 4);
+    padding: 0;
+    width: 250px;
+    margin-right: 4rem;
+  }
 }
 
 .sg-container {
-  overflow: hidden;
-  margin-left: 2rem;
+
+  @include media(tablet){
+    overflow: hidden;
+    margin-left: 2rem;
+  }
 }
 
 .sg-pattern {
@@ -26,9 +33,15 @@
   padding: 0.5rem 0;
 }
 
-.sg-nav__link {
+.sg-nav__item {
+  padding-left: 14px;
+}
+
+.sg-nav__link::before {
+  content: "";
+  margin-left: -14px;
+  padding-left: 8px;
   border-left: 6px solid $grey20;
-  padding-left: 10px;
 }
 
 .sg-nav__link:hover, 
@@ -37,6 +50,6 @@
   color: $grey100;
 }
 
-.sg-nav__link.active {
+.sg-nav__link.active::before {
   border-color: $grey80;
 }
