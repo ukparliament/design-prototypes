@@ -37,6 +37,14 @@ header {
 }
 
 .site-logo {
+	display: inline-block;
+}
+
+.site-logo:focus {
+	background: none;
+}
+
+.site-logo img {
 	width: 300px;
 	height: auto;
 }
