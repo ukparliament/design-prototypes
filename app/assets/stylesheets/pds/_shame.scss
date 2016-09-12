@@ -15,6 +15,13 @@ a.text-grey:visited,
 	color: $grey60;
 }
 
+a.text-body,
+a.text-body:hover,
+a.text-body:visited,
+.text-body {
+  color: $grey100;
+}
+
 
 .section {
 	@extend h3;

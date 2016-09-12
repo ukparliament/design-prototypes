@@ -27,14 +27,14 @@
     <%= yield :body_start %>
       <div class="sitewide-message">
         <div class="wrapper">
-        <p>This is an experimental prototype using fake data for the <a href="https://pds.blog.parliament.uk/category/website-alpha/" class="text-white" >alpha phase of Parliament UK website</a>.</p>
+        <p>Experimental prototypes using fake data for the alpha phase of the Parliament UK website.</p>
         </div>
       </div>
       <header>
         <div class="wrapper">
 
           <%# TODO svg to png fallback %>
-          <a href="/"><img class="site-logo" src="<%= path_to_image('parliament-uk--black.svg') %>" alt="Parliament.uk" /></a>
+          <a href="/" class="site-logo"><img class="site-logo" src="<%= path_to_image('parliament-uk--white.svg') %>" alt="Parliament.uk" /></a>
         </div>
       </header>
       <%= yield :after_header %>
