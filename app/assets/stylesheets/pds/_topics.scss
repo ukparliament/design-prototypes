@@ -1,0 +1,46 @@
+.header-block,
+.mid-block {
+	width: 100%;
+	background-color: $grey05;
+	padding-bottom: 1rem;
+}
+
+.mid-block {
+	background-color: $grey15;
+}
+
+.topic-item {
+	// border-top: 1px solid $grey60;
+	// border-bottom: 1px solid $grey60;
+	width: 100%;
+
+	@include media(tablet){
+		width: calc(33% - 2rem);
+		margin-right: 2rem;
+	}	
+}
+
+.category-definition,
+.category-group {
+	border-top: 1px solid $grey60;
+	width: 100%;
+
+}
+
+.category-definition,
+.category-group {
+	margin-bottom: 1.5rem;
+
+	@include media(tablet){
+		width: calc(50% - 2rem);
+		margin-right: 2rem;
+	}
+}
+
+.category-definition__title {
+	margin-top: 2rem;
+}
+
+.topic-links {
+	margin-top: 2rem;
+}
