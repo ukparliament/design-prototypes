@@ -38,7 +38,7 @@
         </div>
       </header>
       <%= yield :after_header %>
-      <main id="content">
+      <main>
         
         <%= content_for?(:content) ? yield(:content) : yield %>
         
