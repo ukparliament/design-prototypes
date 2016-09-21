@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   end
 
   resources :statutory_instruments, only: [:index, :show]
+  resources :topics, only: [:index, :show]
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

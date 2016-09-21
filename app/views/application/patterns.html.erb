@@ -1,55 +1,77 @@
-<div class="contains-floats">
-  <div class="sg-menu">
-    <h1>Style Guide</h1>
-    <ul>
-      <li class="sg-nav__item"><a href="styleguide" class="sg-nav__link">Basic markup styles</a></li>
-      <li class="sg-nav__item"><a href="patterns" class="sg-nav__link active">Patterns and components</a></li>
-    </ul>
-  </div>
-  
-  <div class="sg-container">
-
-    <div class="sg-pattern">
-      <h2 class="sg-pattern__title">Callout box</h2>
-      <div class="callout">
-        <h3 class="callout__title">Status</h3>
-        <p>Awaiting debate in both Houses.</p>
-
-      </div>
-    </div>
-
-    <div class="sg-pattern">
-      <h2 class="sg-pattern__title">Help show/hide</h2>
-      <div class="js-collapsible-group">
-        <h5 class="js-collapsible__title">More information</h5>
-        <div class="js-collapsible-content">
-          <p>One of Parliament's main roles is to examine and challenge the work of the government. The House of Commons and the House of Lords use similar methods of scrutiny, although the procedures vary.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="sg-pattern">
-      <h2 class="sg-pattern__title">Tabs</h2>
-      <ul class="tabs">
-        <li class="tab"><a href="#" class="tab__button tab__button--active">Individuals</a></li><li class="tab"><a href="" class="tab__button">Groups</a></li>
+<div class="wrapper">
+  <div class="contains-floats">
+    <div class="sg-menu">
+      <h1>Style Guide</h1>
+      <ul>
+        <li class="sg-nav__item"><a href="styleguide" class="sg-nav__link">Basic markup styles</a></li>
+        <li class="sg-nav__item"><a href="patterns" class="sg-nav__link active">Patterns and components</a></li>
       </ul>
     </div>
-
-
+    
+    <div class="sg-container">
 
       <div class="sg-pattern">
-      <h2 class="sg-pattern__title">Timeline</h2>
-        <div class="timeline">
-          <div class="timeline-top">
-            <h2 class="timeline__title">Timeline</h2>
-            <div class="timeline-past">
-              <div class="events">
+        <h2 class="sg-pattern__title">Callout box</h2>
+        <div class="callout">
+          <h3 class="callout__title">Status</h3>
+          <p>Awaiting debate in both Houses.</p>
+
+        </div>
+      </div>
+
+      <div class="sg-pattern">
+        <h2 class="sg-pattern__title">Help show/hide</h2>
+        <div class="js-collapsible-group">
+          <h5 class="js-collapsible__title">More information</h5>
+          <div class="js-collapsible-content">
+            <p>One of Parliament's main roles is to examine and challenge the work of the government. The House of Commons and the House of Lords use similar methods of scrutiny, although the procedures vary.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sg-pattern">
+        <h2 class="sg-pattern__title">Tabs</h2>
+        <ul class="tabs">
+          <li class="tab"><a href="#" class="tab__button tab__button--active">Individuals</a></li><li class="tab"><a href="" class="tab__button">Groups</a></li>
+        </ul>
+      </div>
+
+
+
+        <div class="sg-pattern">
+        <h2 class="sg-pattern__title">Timeline</h2>
+          <div class="timeline">
+            <div class="timeline-top">
+              <h2 class="timeline__title">Timeline</h2>
+              <div class="timeline-past">
+                <div class="events">
+                  <ul>
+                    <li class="timeline-event">
+                      <p class="timeline-event__date">30 June 2016</p>
+                      <div class="timeline-group">
+                        <h4 class="timeline-event__title">Decision to approve</h4>
+                        <p class="timeline-event__house">House of Lords</p>
+                        <div class="js-collapsible-group timeline-extra">
+                          <h5 class="timeline-extra__title js-collapsible__title">More information</h5>
+                          <div class="js-collapsible-content timeline-extra__content">
+                            <p>This is blah blah</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-future">
+              <h3 class="future-events__title">What's happening next?</h3>
                 <ul>
-                  <li class="timeline-event">
-                    <p class="timeline-event__date">30 June 2016</p>
+                  <li class="timeline-event timeline-event--future">
+                    <p class="timeline-event__date timeline-event--future">Awaiting date</p>
                     <div class="timeline-group">
                       <h4 class="timeline-event__title">Decision to approve</h4>
-                      <p class="timeline-event__house">House of Lords</p>
+                      <p class="timeline-event__house timeline-event__house--commons">House of Commons</p>
                       <div class="js-collapsible-group timeline-extra">
                         <h5 class="timeline-extra__title js-collapsible__title">More information</h5>
                         <div class="js-collapsible-content timeline-extra__content">
@@ -59,72 +81,52 @@
                     </div>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-future">
-            <h3 class="future-events__title">What's happening next?</h3>
-              <ul>
-                <li class="timeline-event timeline-event--future">
-                  <p class="timeline-event__date timeline-event--future">Awaiting date</p>
-                  <div class="timeline-group">
-                    <h4 class="timeline-event__title">Decision to approve</h4>
-                    <p class="timeline-event__house timeline-event__house--commons">House of Commons</p>
-                    <div class="js-collapsible-group timeline-extra">
-                      <h5 class="timeline-extra__title js-collapsible__title">More information</h5>
-                      <div class="js-collapsible-content timeline-extra__content">
-                        <p>This is blah blah</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-          </div>
-
-            <div class="timeline-outcome">
-              <div class="event-outcome">
-                <h3 class="event-outcome__status">
-                  Awaiting approval
-                </h3>
-                <ul class="event-outcome__houses">
-                  <li class="event-outcome__house">House of Commons: <span>Not yet approved</span></li>
-                  <li class="event-outcome__house">House of Lords: <span>Not yet approved</span></li>
-                </ul>
-                <p class="event-outcome__text">
-                  Requires approval by both the House of Commons and House of Lords.
-                </p>
-              </div>
             </div>
 
+              <div class="timeline-outcome">
+                <div class="event-outcome">
+                  <h3 class="event-outcome__status">
+                    Awaiting approval
+                  </h3>
+                  <ul class="event-outcome__houses">
+                    <li class="event-outcome__house">House of Commons: <span>Not yet approved</span></li>
+                    <li class="event-outcome__house">House of Lords: <span>Not yet approved</span></li>
+                  </ul>
+                  <p class="event-outcome__text">
+                    Requires approval by both the House of Commons and House of Lords.
+                  </p>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+
+
+      <div class="sg-pattern">
+        <h2 class="sg-pattern__title">Card</h2>
+        <div class="card" data-house="lords" data-filter="oral written debate edm">
+          <img class="card__profile" alt="Baroness Hargreaves" src="<%= path_to_image('avatar.png') %>" />
+          <div class="card__details">
+            <h2 class="card__title">
+              <a href="#" >Baroness Hargreaves</a>
+            </h2>
+            <p>Members of the House of Lords bring experience and knowledge from a wide range of occupations.</p>
+          </div>
         </div>
       </div>
 
+      
 
 
-    <div class="sg-pattern">
-      <h2 class="sg-pattern__title">Card</h2>
-      <div class="card" data-house="lords" data-filter="oral written debate edm">
-        <img class="card__profile" alt="Baroness Hargreaves" src="<%= path_to_image('avatar.png') %>" />
-        <div class="card__details">
-          <h2 class="card__title">
-            <a href="#" >Baroness Hargreaves</a>
-          </h2>
-          <p>Members of the House of Lords bring experience and knowledge from a wide range of occupations.</p>
-        </div>
+
+
+
+
       </div>
-    </div>
-
-    
-
-
 
 
 
 
     </div>
-
-
-
-
   </div>

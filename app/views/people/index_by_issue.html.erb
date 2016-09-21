@@ -1,178 +1,181 @@
-<!-- 	<p class="section"><a href="#" class="section" >Issues</a> / <a href="#" class="section" >Housing</a> / People</p> -->
-	<h1 class="section-title"><a href="#" class="section-title__link" >Housing</a> </h1>
-<h2 class="sub-section-title">Members</h2>
+<div class="wrapper">
+
+	<!-- 	<p class="section"><a href="#" class="section" >Issues</a> / <a href="#" class="section" >Housing</a> / People</p> -->
+		<h1 class="section-title"><a href="#" class="section-title__link" >Housing</a> </h1>
+	<h2 class="sub-section-title">Members</h2>
 
 
-<ul class="tabs">
-	<li class="tab"><a href="" class="tab__button tab__button--active">Individuals</a></li><li class="tab"><a href="groups" class="tab__button" style="color:#fff">Groups</a></li>
-</ul>
+	<ul class="tabs">
+		<li class="tab"><a href="" class="tab__button tab__button--active">Individuals</a></li><li class="tab"><a href="groups" class="tab__button" style="color:#fff">Groups</a></li>
+	</ul>
 
-<h3 class="h2">MPs and Lords activity around 'housing'</h3>
+	<h3 class="h2">MPs and Lords activity around 'housing'</h3>
 
-<div class="results-members">
-	<form class="results-filters form-group">
-		<h2 class="results-filters__group-title">Filter by</h2>
-		<h3 class="results-filters__title">House:</h3>
-		<div class="two-column house-filters">
-			<div class="form-group-checkbox">
-				<input type="checkbox" name="lords" checked="checked">
-				<label for="Lords" >Lords</label>
+	<div class="results-members">
+		<form class="results-filters form-group">
+			<h2 class="results-filters__group-title">Filter by</h2>
+			<h3 class="results-filters__title">House:</h3>
+			<div class="two-column house-filters">
+				<div class="form-group-checkbox">
+					<input type="checkbox" name="lords" checked="checked">
+					<label for="Lords" >Lords</label>
+				</div>
+				<div class="form-group-checkbox">
+					<input type="checkbox" name="commons" checked="checked">
+					<label for="Commons" >Commons</label>
+				</div>
 			</div>
-			<div class="form-group-checkbox">
-				<input type="checkbox" name="commons" checked="checked">
-				<label for="Commons" >Commons</label>
+			<h3 class="results-filters__title">Contribution type:</h3>
+			<div class="two-column contribution-filters">
+				<div class="form-group-checkbox">
+					<input type="checkbox" name="bill" checked="checked">
+					<label for="bill">Private members' bills</label>
+				</div>
+				<div class="form-group-checkbox">
+					<input type="checkbox" name="oral" checked="checked">
+					<label for="oral">Oral questions</label>
+				</div>
+				<div class="form-group-checkbox">
+					<input type="checkbox" name="written" checked="checked">
+					<label for="written">Written questions</label>
+				</div>
+				<div class="form-group-checkbox">
+					<input type="checkbox" name="debate" checked="checked">
+					<label for="debate">Spoken in a debate</label>
+				</div>
+				<div class="form-group-checkbox">
+					<input type="checkbox" name="edm" checked="checked">
+					<label for="EDM">Early Day Motions</label>
+				</div>
 			</div>
-		</div>
-		<h3 class="results-filters__title">Contribution type:</h3>
-		<div class="two-column contribution-filters">
-			<div class="form-group-checkbox">
-				<input type="checkbox" name="bill" checked="checked">
-				<label for="bill">Private members' bills</label>
+			<h3 class="results-filters__title">Biography:</h3>
+			<div class="two-column contribution-filters">
+				<div class="form-group-checkbox">
+					<input type="checkbox" name="committee" >
+					<label for="committee">Member of a committee</label>
+				</div>		
+				<div class="form-group-checkbox">
+					<input type="checkbox" name="interest" >
+					<label for="interest" >Issue listed as an interest</label>
+				</div>
 			</div>
-			<div class="form-group-checkbox">
-				<input type="checkbox" name="oral" checked="checked">
-				<label for="oral">Oral questions</label>
-			</div>
-			<div class="form-group-checkbox">
-				<input type="checkbox" name="written" checked="checked">
-				<label for="written">Written questions</label>
-			</div>
-			<div class="form-group-checkbox">
-				<input type="checkbox" name="debate" checked="checked">
-				<label for="debate">Spoken in a debate</label>
-			</div>
-			<div class="form-group-checkbox">
-				<input type="checkbox" name="edm" checked="checked">
-				<label for="EDM">Early Day Motions</label>
-			</div>
-		</div>
-		<h3 class="results-filters__title">Biography:</h3>
-		<div class="two-column contribution-filters">
-			<div class="form-group-checkbox">
-				<input type="checkbox" name="committee" >
-				<label for="committee">Member of a committee</label>
-			</div>		
-			<div class="form-group-checkbox">
-				<input type="checkbox" name="interest" >
-				<label for="interest" >Issue listed as an interest</label>
-			</div>
-		</div>
 
-		<h3 class="results-filters__title">Time: <span class="filter-title__sub">(calendar year)</span></h3>
-		<div>
-			<label for="time" class="visually-hidden">Time:</label>
-			<select name="time" >
-				<option value="Past week" disabled>Past week</option>
-				<option value="Past month" disabled>Past month</option>
-				<option value="Past 6 months" disabled>Past 6 months</option>
-				<option value="Past year" selected="selected">Past year</option>
-				<option value="Past 2 years" disabled>Past 2 years</option>
-				<option value="Past 5 years" disabled>Past 5 years</option>
-				<option value="Past 10 years" disabled>Past 10 years</option>
-				<option value="Custom range" disabled>Custom range</option>
-			</select>
-		</div>
-	</form>
-
-	<div class="results-members__list">
-		<p class="lede lede--results"><span class="js-results-counter">6</span> MPs or Lords have contributed in Parliament around this issue in the past calendar year.</p>
-
-		<form class="sort-cards">
-			<label for="sort-members" class="sort-cards__label">Sort members by:</label>
-			<select name="sort-members" >
-				<option value="" >Number of contributions</option>
-				<option value="" disabled>Proportion of a member's total contributions</option>
-				<option value="" disabled>Alphabetical</option>
-				<option value="" disabled>Most recent contributers</option>
-			</select>
+			<h3 class="results-filters__title">Time: <span class="filter-title__sub">(calendar year)</span></h3>
+			<div>
+				<label for="time" class="visually-hidden">Time:</label>
+				<select name="time" >
+					<option value="Past week" disabled>Past week</option>
+					<option value="Past month" disabled>Past month</option>
+					<option value="Past 6 months" disabled>Past 6 months</option>
+					<option value="Past year" selected="selected">Past year</option>
+					<option value="Past 2 years" disabled>Past 2 years</option>
+					<option value="Past 5 years" disabled>Past 5 years</option>
+					<option value="Past 10 years" disabled>Past 10 years</option>
+					<option value="Custom range" disabled>Custom range</option>
+				</select>
+			</div>
 		</form>
-		
-<!--  		<img class="spinner hidden" src="<%= path_to_image('temp-spinner.gif') %>" alt="" />
- --> 
 
-		<div class="card" data-house="commons" data-filter="committee oral written debate bill edm interest">
-			<img class="card__profile" alt="Claire Miller MP" src="<%= path_to_image('avatar.png') %>" />
-			<div class="card__details">
-				<h2 class="card__title">
-					<a href="#" >Claire Miller MP</a>
-				</h2>
-				<p><a href="../../member_issue_activity" >21 contributions</a> around 'housing'</p>
-				<ul class="milli">
-					<li><a href="#" >Minister of Housing</a></li>
-					<li><a href="#" >Member of the 'Communities and Local Government Committee'</a></li>
-					<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
-					<li><a href="#" >Member of the 'Housing in the North'</a> All-Party Parliamentary Group</li>
-				</ul>
+		<div class="results-members__list">
+			<p class="lede lede--results"><span class="js-results-counter">6</span> MPs or Lords have contributed in Parliament around this issue in the past calendar year.</p>
+
+			<form class="sort-cards">
+				<label for="sort-members" class="sort-cards__label">Sort members by:</label>
+				<select name="sort-members" >
+					<option value="" >Number of contributions</option>
+					<option value="" disabled>Proportion of a member's total contributions</option>
+					<option value="" disabled>Alphabetical</option>
+					<option value="" disabled>Most recent contributers</option>
+				</select>
+			</form>
+			
+	<!--  		<img class="spinner hidden" src="<%= path_to_image('temp-spinner.gif') %>" alt="" />
+	 --> 
+
+			<div class="card" data-house="commons" data-filter="committee oral written debate bill edm interest">
+				<img class="card__profile" alt="Claire Miller MP" src="<%= path_to_image('avatar.png') %>" />
+				<div class="card__details">
+					<h2 class="card__title">
+						<a href="#" >Claire Miller MP</a>
+					</h2>
+					<p><a href="../../member_issue_activity" >21 contributions</a> around 'housing'</p>
+					<ul class="milli">
+						<li><a href="#" >Minister of Housing</a></li>
+						<li><a href="#" >Member of the 'Communities and Local Government Committee'</a></li>
+						<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
+						<li><a href="#" >Member of the 'Housing in the North'</a> All-Party Parliamentary Group</li>
+					</ul>
+				</div>
 			</div>
-		</div>
 
-		<div class="card" data-house="lords" data-filter="committee oral written debate">
-			<img class="card__profile" alt="Lord Stratton" src="<%= path_to_image('avatar.png') %>" />
-			<div class="card__details">
-				<h2 class="card__title">
-					<a href="#" >Lord Stratton</a>
-				</h2>
-				<p><a href="../../member_issue_activity" >19 contributions</a> around 'housing'</p>
-				<ul class="milli">
-					<li><a href="#" >Member of the 'Communities and Local Government Committee'</a></li>
-					<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
-					<li><a href="#" >Member of the 'Housing in the North'</a> All-Party Parliamentary Group</li>
-				</ul>
+			<div class="card" data-house="lords" data-filter="committee oral written debate">
+				<img class="card__profile" alt="Lord Stratton" src="<%= path_to_image('avatar.png') %>" />
+				<div class="card__details">
+					<h2 class="card__title">
+						<a href="#" >Lord Stratton</a>
+					</h2>
+					<p><a href="../../member_issue_activity" >19 contributions</a> around 'housing'</p>
+					<ul class="milli">
+						<li><a href="#" >Member of the 'Communities and Local Government Committee'</a></li>
+						<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
+						<li><a href="#" >Member of the 'Housing in the North'</a> All-Party Parliamentary Group</li>
+					</ul>
+				</div>
 			</div>
-		</div>
 
-		
-		<div class="card" data-house="commons" data-filter="committee oral written debate bill edm interest">
-			<img class="card__profile" alt="Rt Hon Dennis Smith MP" src="<%= path_to_image('avatar.png') %>" />
-			<div class="card__details">
-				<h2 class="card__title">
-					<a href="#" >Rt Hon Dennis Smith MP</a>
-				</h2>
-				<p><a href="../../member_issue_activity" >15 contributions</a> around 'housing'</p>
-				<ul class="milli">
-					<li><a href="#" >Member of the 'Communities and Local Government Committee'</a></li>
-					<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
-				</ul>
+			
+			<div class="card" data-house="commons" data-filter="committee oral written debate bill edm interest">
+				<img class="card__profile" alt="Rt Hon Dennis Smith MP" src="<%= path_to_image('avatar.png') %>" />
+				<div class="card__details">
+					<h2 class="card__title">
+						<a href="#" >Rt Hon Dennis Smith MP</a>
+					</h2>
+					<p><a href="../../member_issue_activity" >15 contributions</a> around 'housing'</p>
+					<ul class="milli">
+						<li><a href="#" >Member of the 'Communities and Local Government Committee'</a></li>
+						<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
 
 
-		<div class="card" data-house="lords" data-filter="oral written debate edm">
-			<img class="card__profile" alt="Baroness Hargreaves" src="<%= path_to_image('avatar.png') %>" />
-			<div class="card__details">
-				<h2 class="card__title">
-					<a href="#" >Baroness Hargreaves</a>
-				</h2>
-				<p><a href="../../member_issue_activity" >14 contributions</a> around 'housing'</p>
-				<ul class="milli">
-					<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
-				</ul>
+			<div class="card" data-house="lords" data-filter="oral written debate edm">
+				<img class="card__profile" alt="Baroness Hargreaves" src="<%= path_to_image('avatar.png') %>" />
+				<div class="card__details">
+					<h2 class="card__title">
+						<a href="#" >Baroness Hargreaves</a>
+					</h2>
+					<p><a href="../../member_issue_activity" >14 contributions</a> around 'housing'</p>
+					<ul class="milli">
+						<li>Listed 'housing' as an interest <a href="#" >on their profile</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
 
-		<div class="card" data-house="commons" data-filter="written debate">
-			<img class="card__profile" alt="Jonathan Stuart MP" src="<%= path_to_image('avatar.png') %>" />
-			<div class="card__details">
-				<h2 class="card__title">
-					<a href="#" >Jonathan Stuart MP</a>
-				</h2>
-				<p><a href="../../member_issue_activity" >12 contributions</a> around 'housing'</p>
-				<ul class="milli">
-					<li><a href="#" >Member of the 'Housing in the North'</a> All-Party Parliamentary Group</li>
-				</ul>
+			<div class="card" data-house="commons" data-filter="written debate">
+				<img class="card__profile" alt="Jonathan Stuart MP" src="<%= path_to_image('avatar.png') %>" />
+				<div class="card__details">
+					<h2 class="card__title">
+						<a href="#" >Jonathan Stuart MP</a>
+					</h2>
+					<p><a href="../../member_issue_activity" >12 contributions</a> around 'housing'</p>
+					<ul class="milli">
+						<li><a href="#" >Member of the 'Housing in the North'</a> All-Party Parliamentary Group</li>
+					</ul>
+				</div>
 			</div>
-		</div>
 
-		<div class="card" data-house="commons" data-filter="written debate">
-			<img class="card__profile" alt="Jennie Brown MP" src="<%= path_to_image('avatar.png') %>" />
-			<div class="card__details">
-				<h2 class="card__title">
-					<a href="#" >Jennie Brown MP</a>
-				</h2>
-				<p><a href="../../member_issue_activity" >9 contributions</a> around 'housing'</p>
+			<div class="card" data-house="commons" data-filter="written debate">
+				<img class="card__profile" alt="Jennie Brown MP" src="<%= path_to_image('avatar.png') %>" />
+				<div class="card__details">
+					<h2 class="card__title">
+						<a href="#" >Jennie Brown MP</a>
+					</h2>
+					<p><a href="../../member_issue_activity" >9 contributions</a> around 'housing'</p>
+				</div>
 			</div>
+
+
 		</div>
-
-
 	</div>
 </div>

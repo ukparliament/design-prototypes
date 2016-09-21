@@ -48,6 +48,7 @@ a:hover, a:focus {
 	color: $white;
 	cursor: pointer;
 	border: none;
+	text-align: center;
 }
 
 .button:hover, 
@@ -58,6 +59,10 @@ a:hover, a:focus {
 
 .button:visited {
 	color: $white;
+}
+
+.button--small {
+	font-size: 0.875rem;
 }
 
 .spinner {

@@ -1,2 +1,17 @@
 // Lazy prototyping styles
 
+//flexbox container row
+.fb-container-row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.page-margins {
+	margin-left: $gutter-half;
+	margin-right: $gutter-half;
+
+	@include media(tablet) {
+		margin-left: $gutter;
+		margin-right: $gutter;
+	}	
+}

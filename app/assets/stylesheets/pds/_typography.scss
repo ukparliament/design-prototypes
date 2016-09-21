@@ -115,6 +115,8 @@ h6,
   color: $grey60;
   margin-bottom: 0.5rem;
   font-weight: 400;
+  margin-top: 0;
+  padding-top: 2.5rem;
 }
 
 .section-title__link,
@@ -140,3 +142,24 @@ h6,
   font-size: 0.875rem;
 }
 
+.supplementary-link {
+  font-size: 0.875rem;
+  color: $grey80;
+}
+
+.supplementary-link:hover,
+.supplementary-link:active,
+.supplementary-link:visited {
+  color: $grey100;
+}
+
+
+.supplementary-link::before {
+    content: "";
+    background: url("/assets/arrow-right.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.25rem;
+}
