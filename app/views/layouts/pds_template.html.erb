@@ -21,7 +21,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
     <%= yield :head %>
-  
+
   </head>
   <body>
     <%= yield :body_start %>
@@ -39,11 +39,22 @@
       </header>
       <%= yield :after_header %>
       <main>
-        
+
         <%= content_for?(:content) ? yield(:content) : yield %>
-        
+
       </main>
 
+
+      <footer class="ukpds-footer">
+          <div class="footer-meta">
+              <div class="footer-meta-inner">
+                  <a href="/" class="site-logo"><img class="site-logo" src="<%= path_to_image('parliament-uk--black.svg') %>" alt="Parliament.uk" /></a>
+              </div>
+              <div class="copyright">
+                  <p>&copy; Parliamentary Copyright<br><br></p>
+              </div>
+          </div>
+      </footer>
 
     <script src="<%= asset_path "govuk-template.js" %>"></script>
     <%= yield :body_end %>

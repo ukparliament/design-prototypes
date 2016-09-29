@@ -1,0 +1,18 @@
+.ukpds-footer {
+    background-color: #dee0e2;
+    border-top: 10px solid #005ea5;
+    .footer-meta {
+        margin: 30px;
+        .footer-meta-inner,
+        .copyright {
+            display: inline-block;
+        }
+        .footer-meta-inner {
+            width: 60%;
+        }
+        .copyright {
+            text-align: right;
+            width: 30%;
+        }
+    }
+}
