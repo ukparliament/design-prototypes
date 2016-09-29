@@ -13,6 +13,10 @@
 	margin-top: -0.5rem;
 }
 
+.si-container {
+	@extend %contain-floats;
+}
+
 .si-status__title {
 	margin-top: 0;
 }
