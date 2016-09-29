@@ -8,7 +8,7 @@ Install Docker for Windows from here - https://docs.docker.com/docker-for-window
 
 ## Setup
 
-Edit your host file and add the following line
+Edit your host file and add the following line.
 
 | O.S           | Location                                  |
 | ------------- |:-----------------------------------------:|
