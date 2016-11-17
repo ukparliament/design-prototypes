@@ -9,7 +9,7 @@ VERSION=0.1.$(GO_PIPELINE_COUNTER)
 
 # ECS-related
 ECS_CLUSTER = ci
-ECS_APP_NAME = DesignPrototypes
+ECS_APP_NAME = designprototypes
 AWS_REGION = eu-west-1
 
 run:
