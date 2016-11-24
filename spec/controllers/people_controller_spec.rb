@@ -5,7 +5,7 @@ describe PeopleController do
 		expect('a').to eq 'a'
 	end
 
-	it 'should have a failing test' do
+	xit 'should have a failing test' do
 		expect('b').to eq 'c'
 	end
 end
