@@ -1,4 +1,6 @@
-IMAGE = 165162103257.dkr.ecr.eu-west-1.amazonaws.com/designprototypes
+AWS_ACCOUNT = $(shell aws sts get-caller-identity --output text --query "Account" 2> /dev/null)
+
+IMAGE = $(AWS_ACCOUNT).dkr.ecr.eu-west-1.amazonaws.com/designprototypes
 
 # GO_PIPELINE_COUNTER is the pipeline number, passed from our build agent.
 GO_PIPELINE_COUNTER?="unknown"
