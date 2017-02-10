@@ -55,7 +55,7 @@ deploy-ci:
 
 # http://serverfault.com/questions/682340/update-the-container-of-a-service-in-amazon-ecs?rq=1
 deploy-ecs-ci:
-	aws ecs register-task-definition --cli-input-json file://./aws_ecs/design-prototypes.json
+	./aws_ecs/register-task-definition.sh $(IMAGE)
 	aws ecs update-service --service $(ECS_APP_NAME) --cluster $(ECS_CLUSTER) --region $(AWS_REGION) --task-definition $(ECS_APP_NAME)
 
 
