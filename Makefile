@@ -1,4 +1,4 @@
-AWS_ACCOUNT = $(shell aws sts get-caller-identity --output text --query "Account" 2> /dev/null)
+AWS_ACCOUNT = $(shell aws ec2 describe-security-groups --query 'SecurityGroups[0].OwnerId' --output text 2> /dev/null)
 
 IMAGE = $(AWS_ACCOUNT).dkr.ecr.eu-west-1.amazonaws.com/designprototypes
 
