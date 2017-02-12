@@ -1,7 +1,7 @@
 {
   "containerDefinitions": [
     {
-      "name": "designprototypes",
+      "name": "{{APP_NAME}}",
       "image": "{{IMAGE}}",
       "cpu": 10,
       "memory": 256,
@@ -17,11 +17,11 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "designprototypes",
-          "awslogs-region": "eu-west-1"
+          "awslogs-group": "{{APP_NAME}}",
+          "awslogs-region": "{{AWS_REGION}}"
         }
       }
     }
   ],
-  "family": "designprototypes"
+  "family": "{{APP_NAME}}"
 }
