@@ -63,4 +63,12 @@ clean:
 deploy-swarm:
 	export DOCKER_HOST=$(DOCKER_SWARM_URL) && export IMAGE_NAME=$(IMAGE):$(VERSION) && docker-compose -f docker-compose.ci.yml down && docker-compose -f docker-compose.ci.yml up -d
 
+<<<<<<< HEAD
+=======
+# http://serverfault.com/questions/682340/update-the-container-of-a-service-in-amazon-ecs?rq=1
+deploy-ecs-ci:
+	./aws_ecs/register-task-definition.sh $(IMAGE)
+	aws ecs update-service --service $(ECS_APP_NAME) --cluster $(ECS_CLUSTER) --region $(AWS_REGION) --task-definition $(ECS_APP_NAME)
+
+>>>>>>> master
 
