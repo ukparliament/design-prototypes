@@ -36,9 +36,10 @@ push:
 	docker rmi $(IMAGE):latest
 
 # http://serverfault.com/questions/682340/update-the-container-of-a-service-in-amazon-ecs?rq=1
-deploy-ci:
-	aws ecs register-task-definition --cli-input-json file://./aws_ecs/task-definition.json
-	aws ecs update-service --service $(APP_NAME) --cluster $(ECS_CLUSTER) --region $(AWS_REGION) --task-definition $(APP_NAME)
+deploy-ecs:
+# aws ecs register-task-definition --cli-input-json file://./aws_ecs/task-definition.json
+	./aws_ecs/register-task-definition.sh $(IMAGE)
+	aws ecs update-service --service $(APP_NAME) --cluster $(ECS_CLUSTER) --region $(AWS_REGION) --task-definition task-definition
 
 
 
@@ -62,5 +63,3 @@ clean:
 
 deploy-swarm:
 	export DOCKER_HOST=$(DOCKER_SWARM_URL) && export IMAGE_NAME=$(IMAGE):$(VERSION) && docker-compose -f docker-compose.ci.yml down && docker-compose -f docker-compose.ci.yml up -d
-
-
