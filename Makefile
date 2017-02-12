@@ -1,5 +1,8 @@
 APP_NAME = designprototypes
-AWS_ACCOUNT_ID?="unknown" # an env var set in GoCD GUI
+
+# The value assigned here is for execution in local machines
+# When executed by GoCD it may inject another value from a GoCD environment variable
+AWS_ACCOUNT_ID=$(shell aws sts get-caller-identity --output text --query "Account" 2> /dev/null)
 
 # GO_PIPELINE_COUNTER is the pipeline number, passed from our build agent.
 GO_PIPELINE_COUNTER?="unknown"
