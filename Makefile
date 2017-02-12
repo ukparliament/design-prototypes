@@ -1,4 +1,6 @@
-IMAGE = 165162103257.dkr.ecr.eu-west-1.amazonaws.com/designprototypes
+AWS_ACCOUNT = $(shell aws ec2 describe-security-groups --query 'SecurityGroups[0].OwnerId' --output text 2> /dev/null)
+
+IMAGE = $(AWS_ACCOUNT).dkr.ecr.eu-west-1.amazonaws.com/designprototypes
 
 # GO_PIPELINE_COUNTER is the pipeline number, passed from our build agent.
 GO_PIPELINE_COUNTER?="unknown"
@@ -53,7 +55,7 @@ deploy-ci:
 
 # http://serverfault.com/questions/682340/update-the-container-of-a-service-in-amazon-ecs?rq=1
 deploy-ecs-ci:
-	aws ecs register-task-definition --cli-input-json file://./aws_ecs/design-prototypes.json
+	./aws_ecs/register-task-definition.sh $(IMAGE)
 	aws ecs update-service --service $(ECS_APP_NAME) --cluster $(ECS_CLUSTER) --region $(AWS_REGION) --task-definition $(ECS_APP_NAME)
 
 
