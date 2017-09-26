@@ -3,6 +3,8 @@ MAINTAINER Steven Wade "steven@stevenwade.co.uk"
 
 ENV APP_USER parliament
 
+RUN apt-get update && apt-get -y upgrade
+
 # create user to run app in user space
 RUN set -x && groupadd -g 5000 $APP_USER && adduser --disabled-password --uid 5000 --gid 5000 --gecos '' $APP_USER
 
